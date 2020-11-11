@@ -121,3 +121,18 @@
     height: 50px;
 }
 
+
+/* EXPLORAR DESKTOP */
+.carrouselExpl{
+    border-style: solid;
+    height: 25%;
+}
+
+
+/* NOTIFICACIONES */
+.noti{
+    width: 160%;
+    height: 200px;
+    border-style: solid;
+    border-color: rgb(0, 38, 253);
+}

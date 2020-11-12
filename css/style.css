@@ -75,7 +75,7 @@
     /* border-color: chartreuse; */
     background-color: black;
     width: 100%;
-    height: 80px;
+    height: 10vh;
 }
 
 .icoDesk{
@@ -88,7 +88,7 @@
     border-radius: 20px;
     background-color: white;
     width: 100%;
-    height: 50px;
+    height: 45px;
 }
 /*  -- FIN HEADER   -- */
 
@@ -111,17 +111,22 @@
 /* --   FOOTER  -- */
 .footerDesk{
     background-color: black;
-    height: 120px;
+    height: 20vh;
 }
 .box{
     border-style: solid;
     height: 50px;
 }
 .reproductor{
-    border-style: solid;
-    border-color: rgb(0, 38, 253);
-    height: 50px;
+    /* border-style: solid; */
+    /* border-color: rgb(0, 38, 253); */
+    background-color: gray;
+    height: 10px;
 }
+/* .bottom{
+    position: relative;
+    top: 6rem;
+} */
 
 
 /* EXPLORAR DESKTOP */
@@ -139,10 +144,17 @@
     border-color: rgb(0, 38, 253);
 }
 
+.container{
+    height: 70vh;
+}
 
 
 
 /* ------------     COLOURS     --------------- */
+.load{
+    background-color: white;
+    height: 10px;
+}
 .c-gray{
     color: gray;
 }
@@ -160,6 +172,7 @@
 .c-section{
     color: #1b2829;
 }
-/* body{
+body{
+    /* overflow-y: hidden; */
     background-color: #002526;
-} */
+}

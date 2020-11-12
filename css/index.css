@@ -1,0 +1,95 @@
+/* -- General -- */
+
+body {
+    font-family: 'Segoe UI';
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+/*
+.row {
+    border: 1px solid white;
+    box-sizing: border-box;
+}
+*/
+/* -- Landing Header -- */
+
+.landing-header {
+    height: 8vh;
+    background-color: #040404;
+}
+
+.landing-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #04CFD2;
+}
+
+/* -- Landing Main Content -- */
+
+.landing-main {
+    height: 82vh;
+    background-color: #002526;
+}
+
+.hero-image-container {
+    height: 42vh;
+}
+
+#hero-mobile {
+    height: 90%;
+}
+
+.landing-description-container {
+    height: 14vh;
+}
+
+.landing-description {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 22px;
+    text-align: center;
+}
+
+.demo-test-container {
+    height: 26vh;
+}
+
+.demo-button-container{
+    height: 40%;
+}
+
+.demo-text-container {
+    height: 60%;
+}
+
+.demo-text {
+    color: #ECEFEF;
+    font-size: 15px;
+    text-align: center;
+    font-weight: lighter;
+}
+
+/* -- Landing Footer  -- */
+
+.landing-footer {
+    height: 10vh;
+    background-color: #002526;
+}
+
+.landing-footer .row {
+    height: inherit;
+}
+
+.access-button {
+    width: 100%;
+    background-color: #04CFD2;
+    border-radius: 2em;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+

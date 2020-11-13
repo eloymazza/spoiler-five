@@ -144,13 +144,6 @@
 }
 
 
-/* NOTIFICACIONES */
-.noti{
-    width: 160%;
-    height: 200px;
-    border-style: solid;
-    border-color: rgb(0, 38, 253);
-}
 
 .container{
     height: 70vh;
@@ -160,6 +153,7 @@
     background-color: transparent;
     border: 0px;
 }
+
 
 
 /* -----    CARROUSEL   ---- */

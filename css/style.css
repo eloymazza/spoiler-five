@@ -131,10 +131,17 @@
     background-color: gray;
     height: 10px;
 }
-/* .bottom{
-    position: relative;
-    top: 6rem;
-} */
+.ocultar{
+display: none;
+}
+.mostrar{   
+display: block;
+}
+.btn-add-image{
+    background: transparent;
+    border: none;
+}
+
 
 
 /* EXPLORAR DESKTOP */

@@ -91,8 +91,16 @@
     left: 4%;
     z-index: 1;
 }
+
+.user-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .p-user{
-    position: absolute;
     font-size: 75%;
     color: gray;
     right: 6.7rem;

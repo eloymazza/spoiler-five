@@ -10,23 +10,65 @@
 </head>
 <body>
     <header>
-        <div class="container-fluid landing-header d-flex justify-content-center align-items-center">
-            <h1 class="landing-title">
-               SPOILER FIVE 
-            </h1>
+        <div class="container-fluid landing-header">
+            <div class="row full-height">
+                <div class="d-none col-sm-4 d-sm-flex align-items-center">
+                    <img src="./img/spoilerfive-logo.png" class="spoiler-logo" alt="">
+                </div>
+                <div class="col-12 col-sm-4 align-full-center">
+                    <h1 class="landing-title">
+                        SPOILER FIVE 
+                     </h1>
+                </div>
+                <div class="d-none col-sm-4 d-sm-block">
+                    <div class="row full-height">
+                        <div class="col-sm-6 d-sm-flex align-items-center">
+                            <button type="button" class="btn access-button">
+                                INICIAR SESIÓN
+                            </button>
+                        </div>
+                        <div class="col-sm-6 d-sm-flex align-items-center">
+                            <button type="button" class="btn access-button">
+                                REGISTRARSE
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>  
     <main>
         <div class="container-fluid landing-main">
+            <!-- Desktop Start-->
+            <div class="row full-height">
+                <div class="d-none col-sm-5 d-sm-block full-height">
+                    <div class="d-sm-flex justify-content-center align-items-center full-height">
+                        <img src="./img/hero.png" id="hero-logo" alt="">
+                    </div>
+                </div>
+                <div class="d-none col-sm-7 d-sm-block">
+                    <div class="landing-description-container d-flex justify-content-center align-items-center">
+                        <h2 class="landing-description">
+                            Lleva tu música a todas
+                            partes del mundo.
+                            <br>
+                            Calidad y confianza 
+                            asegurada.
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <!-- Desktop end-->
+            <!-- Mobile start -->
             <div class="row">
-                <div class="col-6 offset-3">
+                <div class="col-6 offset-3 d-sm-none" >
                     <div class="hero-image-container d-flex justify-content-center align-items-center">
-                        <img id="hero-mobile" src="./img/hero.png" alt="">
+                        <img id="hero-logo" src="./img/hero.png" alt="">
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-10 offset-1">
+                <div class="col-10 offset-1 d-sm-none">
                     <div class="landing-description-container d-flex justify-content-center align-items-center">
                         <h2 class="landing-description">
                             Lleva tu música a todas
@@ -39,7 +81,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 d-sm-none">
                     <div class="demo-test-container">
                         <div class="row demo-button-container">
                             <div class="col-8 offset-2 d-flex justify-content-center align-items-end">
@@ -61,17 +103,18 @@
                     </div>
                 </div>
             </div>
+            <!-- Mobile end -->
         </div>
     </main>
     <footer>
         <div class="container-fluid landing-footer">
             <div class="row">
-                <div class="col d-flex justify-content-center align-items-center">
+                <div class="col d-sm-none d-flex justify-content-center align-items-center">
                     <button type="button" class="btn access-button">
                         INICIAR SESIÓN
                     </button>
                 </div>
-                <div class="col d-flex justify-content-center align-items-center">
+                <div class="col d-sm-none  d-flex justify-content-center align-items-center">
                     <button type="button" class="btn access-button">
                         REGISTRARSE
                     </button>

@@ -147,11 +147,16 @@
 
 .container{
     height: 70vh;
+    overflow-y: scroll;
 }
 
 .card{
     background-color: transparent;
     border: 0px;
+}
+.fixed{
+    position: fixed;
+    width: 14%;
 }
 
 
@@ -168,6 +173,13 @@
 
 .mr-6{
     margin-right: 4rem;
+}
+.btnNexts{
+    width: 80%;
+}
+.card{
+    height: 30%;
+    width: 25%;
 }
 /* -----    CARROUSEL   ---- */
 

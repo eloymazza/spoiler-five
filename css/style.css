@@ -194,6 +194,16 @@
     height: 30%;
     width: 25%;
 }
+.ocultar{
+    display: none;
+}
+.mostrar{   
+    display: block;
+    }
+.btn-add-image{
+    background: transparent;
+    border: none;
+}
 /* -----    CARROUSEL   ---- */
 
 

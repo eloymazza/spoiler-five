@@ -1,24 +1,23 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/biblioteca.css">
     <title>Spoiler five</title>
 </head>
 
 <body>
-    <!-- OCULTO EN MD   mobile-->
-    <div class="header col-12 d-md-none d-lg-block">
+       <!-- VISIBLE SOLO EN XS   mobile-->
+    <div class="header col-12 d-block d-sm-none">
         <div class="row mt-3">
             <div class="title col-10"></div>
             <div class="search col-2"></div>
         </div>
     </div>
-    <div class="container col-12 d-md-none d-lg-block">
+    <div class="container col-12 d-block d-sm-none">
         <div class="row">
             <div class="carrousel"></div>
         </div>
@@ -29,7 +28,7 @@
             <div class="carrousel"></div>
         </div>
     </div>
-    <div class="footer col-12 d-md-none d-lg-block">
+    <div class="footer col-12 d-block d-sm-none">
         <div class="row">
             <div class="col-3 fot"></div>
             <div class="col-3 fot"></div>
@@ -37,55 +36,533 @@
             <div class="col-3 fot"></div>
         </div>
     </div>
-    <!-- FIN OCULTO EN MD      mobile-->
+    <!-- FIN DE VISIBLE EN XS      mobile-->
 
-    <!-- VISIBLE SOLO EN MD     desktop -->
-    <div class="headerDesk col-12 d-none d-md-block d-lg-none">
-        <div class="row mt-3">
-            <div class="icoDesk col-2"></div>
-            <div class="searchDesk col-4"></div>
-            <div class="icoDesk col-2"></div>
-            <div class="icoDesk col-2"></div>
-            <div class="icoDesk col-2"></div>
+    <!-- OCULTO SOLO EN XS     desktop -->
+    <div class="headerDesk col-12 d-none d-sm-block">
+        <div class="row h-100">
+           <div class="col-2 d-sm-flex align-items-center">
+               <img src="../img/spoilerfive-logo.png" alt="spoiler-five" width="20%" height="60%">
+            </div>
+           <div class="col-6 d-sm-flex align-items-center">
+                <img class="ajustarLupa" src="../img/lupa.png" alt="search" width="5%" height="38%">  
+                <input class="searchDesk" placeholder="Artistas, Canciones, Podcasts" type="text">   
+           </div>
+           <div class="col-4 text-center d-sm-flex align-items-center justify-content-end pl-2"> 
+               <!-- <div class="col-2"> -->
+                <div class="user-container mb-2">
+                    <img src="../img/usuario.png" alt="perfil" height="23px" >
+                    <span class="p-user">John86</span>
+                </div>
+               <!-- </div> -->
+               <img class="ml-4 mr-4"src="../img/campana.png" alt="notificaciones" height="40%">
+               <img src="../img/ajustes.png" alt="config" height="40%">
+            </div>
+            <!-- <div class="icoDesk col-2"></div> -->
         </div>
     </div>
-    <div class="container col-md-12 d-none d-md-block d-lg-none">
+
+    <div class="homeDesk col-12 d-none d-sm-block">
+                <!-- NAVSIDE -->
         <div class="row">
-            <div class="col-md-4">
-                <div class="row navs">
-                    <div class="btnNav col-md-12 align-self-center"></div>
+            <div class="col-2">
+                <div class="fixed">
+
+                <div class="row navs c-ico"> 
+                    <div class="col-12 text-center mt-4">
+                        <a href="home.html"><img src="../img/hogar.png" width="20%" height="30%"></a>
+                        <h6>HOME</h6>
+                    </div>
                 </div>
-                <div class="row navs">
-                    <div class="btnNav col-md-12 align-self-center"></div>
+
+                <div class="row navs c-ico">
+                    <div class="col-12 text-center mt-4 fixed">
+                        <a href="explorar.html"><img src="../img/explorar_gris.png" width="20%" height="30%"></a>
+                        <h6>EXPLORAR</h6> 
+                    </div>  
                 </div>
+
                 <div class="row navs">
-                    <div class="btnNav col-md-12 align-self-center"></div>
+                    <div class="col-12 text-center mt-4 fixed">
+                        <a href="biblioteca.html"><img src="../img/libro_cel.png" width="20%" height="30%"></a>
+                        <h6 class="c-lBlue">MI BIBLIOTECA</h6> 
+                    </div>  
+                </div>
+
                 </div>
             </div>
-            <div class="col-md-8">
-                <div class="row carrouselDesk"></div>
-                <div class="row carrouselDesk"></div>
-                <div class="row carrouselDesk"></div>
+
+            <!-- CARROUSELES -->
+            <div class="col-10">
+                <div class="row">
+                    <div class="col-9">
+                        <h3 class="c-white">MI BIBLIOTECA</h3>
+                    </div>
+                    <div class="col-3 d-flex justify-content-end">
+                        <button class="btn-filtrar mt-2 position-absolute" id="btnFiltrar"><img id="imgFiltro" src="../img/filtrar_gris.png"></button>
+                            <div id="filtro" class="filtrar">
+                            <div class="col-12"> <h5 class="c-white mt-2">FILTRAR</h5></div>
+                            <div class="col-12"> <p class="mb-0 c-white text-left">POR FECHA</p></div>
+                            <div class="row d-flex justify-content-center mt-1">
+                                <div class="col-4 text-left">
+                                    <div class="btn-group ml-1">
+                                        <button class="w-60 ml-2 btn-drop btn-sm dropdown-toggle" id="drop" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          Mayor a
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Mayor a</a>
+                                            <a class="dropdown-item" href="#">Menor a</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-4 text-center">
+                                    <div class="btn-group">
+                                        <button class="w-20 btn-drop btn-sm dropdown-toggle" id="drop" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                         Año
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Mayor a</a>
+                                        </div>
+                                      </div>
+                                </div>
+
+                                <div class="col-4">
+                                    <div class="btn-group mr-5">
+                                        <button class="w-20 btn-drop btn-sm dropdown-toggle" id="drop" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                         Mes
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Mayor a</a>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-12"> <p class="c-white text-left mb-0">POR CATEGORIA</p></div>
+                            <div class="col-12 text-center mt-1">
+                                    <button class="w-100 btn-drop btn-sm dropdown-toggle" id="drop" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Seleccione categoria</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Cumbia</a>
+                                        <a class="dropdown-item" href="#">Regueton</a>
+                                        <a class="dropdown-item" href="#">Pop</a>
+                                        <a class="dropdown-item" href="#">Salsa</a>
+                                        <a class="dropdown-item" href="#">Lentos</a>
+
+                                    </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn-aplicar bg-lblue b-r w-100 mt-3">APLICAR FILTROS</button>
+                            </div>
+                            </div>
+                    </div>
+                </div>
+                <!-- CARROUSEL 1 (Lo ultimo) -->
+                <div class="row">
+                                                    <!-- LO ULTIMO --> 
+                <div id="carouselExampleInterval" class="carousel slide tCenter mt-3" data-ride="carousel">
+                    <div class="row mr-6">
+                        <div class="col-9">
+                            <h5 class="ml-3 c-white">MIS PLAYLISTS</h5>
+                        </div>
+                        <div class="col-3 d-flex justify-content-end">
+                            <a href="#carouselExampleInterval" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="ml-3" href="#carouselExampleInterval" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!--  CARRUSEL 1--> 
+                    <div class="carousel-inner">     
+                    <div class="carousel-item active" data-interval="20000">
+                        <div class="row card-deck mt-1">
+                            <div class="card col-3">
+                                <img src="../img/fiesta.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Fiesta! Fiesta!</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/ìconos-del-Rock-Argentino.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Rock Argentino</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/this_paulo.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Paulo Londra</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/hits_urbanos.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Hits Urbanos</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+                         </div>  
+                        <!--  FIN CARRUSEL 1-->
+                    </div>
+
+                <!--  CARRUSEL 2-->
+                    <div class="carousel-item" data-interval="20000">
+                        <div class="row card-deck mt-1">
+                            <div class="card col-3">
+                                <img src="../img/fiesta.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">De fiesta</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+                            
+                            <div class="card col-3">
+                                <img src="../img/ìconos-del-Rock-Argentino.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Rock Argentino</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/this_paulo.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Paulo Londra</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/hits_urbanos.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Hits Urbanos</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+                        </div>  
+                    </div>
+                        <!--  FIN CARRUSEL 2-->
+                        
+                        <!--  CARRUSEL 3-->
+                    <div class="carousel-item" data-interval="20000"> 
+                        <div class="row card-deck mt-1">
+                            <div class="card col-3">
+                                <img src="../img/fiesta.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">De fiesta</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+                            
+                            <div class="card col-3">
+                                <img src="../img/ìconos-del-Rock-Argentino.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Rock Argentino</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/this_paulo.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Paulo Londra</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/hits_urbanos.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Hits Urbanos</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>           
+                        </div>
+                    </div>
+                        <!-- FIN CARRUSEL 3-->
+                    </div>
+                    </div>
+                </div> 
+                <!-- FIN DE CARROUSEL 1 (Lo ultimo) -->
+
+
+                <!-- CARROUSEL 2 (Escuchados recientemente) -->
+                <div class="row">
+                    <div id="carouselExampleIntervalTwo" class="carousel slide tCenter" data-ride="carousel">
+                    <div class="row mr-6">
+                        <div class="col-9">
+                            <h5 class="ml-3 c-white">MIS DESCARGAS</h5>
+                        </div>
+                        <div class="col-3 d-flex justify-content-end">
+                            <a href="#carouselExampleIntervalTwo" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="ml-3" href="#carouselExampleIntervalTwo" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                
+                    <div class="carousel-inner">     <!--  CARRUSEL 1--> 
+                    <div class="carousel-item active" data-interval="20000">
+                        <div class="row card-deck mt-1">
+                            <div class="card col-3">
+                                <img src="../img/fiesta.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Fiesta! Fiesta!</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/ìconos-del-Rock-Argentino.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Rock Argentino</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/this_paulo.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Paulo Londra</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/hits_urbanos.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Hits Urbanos</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+                         </div>  
+                        <!--  FIN CARRUSEL 1-->
+                    </div>
+
+                <!--  CARRUSEL 2-->
+                    <div class="carousel-item" data-interval="20000">
+                        <div class="row card-deck mt-1">
+                            <div class="card col-3">
+                                <img src="../img/fiesta.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">De fiesta</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+                            
+                            <div class="card col-3">
+                                <img src="../img/ìconos-del-Rock-Argentino.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Rock Argentino</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/this_paulo.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Paulo Londra</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/hits_urbanos.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Hits Urbanos</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+                        </div>  
+                    </div>
+                        <!--  FIN CARRUSEL 2-->
+                        
+                        <!--  CARRUSEL 3-->
+                    <div class="carousel-item" data-interval="20000"> 
+                        <div class="row card-deck mt-1">
+                            <div class="card col-3">
+                                <img src="../img/fiesta.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">De fiesta</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+                            
+                            <div class="card col-3">
+                                <img src="../img/ìconos-del-Rock-Argentino.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Rock Argentino</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/this_paulo.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Paulo Londra</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/hits_urbanos.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Hits Urbanos</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>           
+                        </div>
+                    </div>
+                        <!-- FIN CARRUSEL 3-->
+                    </div>
+                    </div>
+                </div>
+                <!-- FIN DE CARROUSEL 2 (Escuchados recientemente) -->
+
+
+                 <!-- CARROUSEL 3 (Lo que mas le gusta) -->
+                <div class="row">
+                    <div id="carouselExampleIntervalThree" class="carousel slide tCenter" data-ride="carousel">
+                    <div class="row mr-6">
+                        <div class="col-9">
+                            <h5 class="ml-3 c-white">FAVORITOS</h5>
+                        </div>
+                        <div class="col-3 d-flex justify-content-end">
+                            <a href="#carouselExampleIntervalThree" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="ml-3" href="#carouselExampleIntervalThree" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                
+                    <div class="carousel-inner">     <!--  CARRUSEL 1--> 
+                    <div class="carousel-item active" data-interval="20000">
+                        <div class="row card-deck mt-1">
+                            <div class="card col-3">
+                                <img src="../img/fiesta.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Fiesta! Fiesta!</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/ìconos-del-Rock-Argentino.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Rock Argentino</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/this_paulo.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Paulo Londra</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/hits_urbanos.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Hits Urbanos</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+                            </div>  
+                        <!--  FIN CARRUSEL 1-->
+                    </div>
+
+                <!--  CARRUSEL 2-->
+                    <div class="carousel-item" data-interval="20000">
+                        <div class="row card-deck mt-1">
+                            <div class="card col-3">
+                                <img src="../img/fiesta.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">De fiesta</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+                            
+                            <div class="card col-3">
+                                <img src="../img/ìconos-del-Rock-Argentino.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Rock Argentino</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/this_paulo.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Paulo Londra</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/hits_urbanos.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Hits Urbanos</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+                        </div>  
+                    </div>
+                        <!--  FIN CARRUSEL 2-->
+                        
+                        <!--  CARRUSEL 3-->
+                    <div class="carousel-item" data-interval="20000"> 
+                        <div class="row card-deck mt-1">
+                            <div class="card col-3">
+                                <img src="../img/fiesta.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">De fiesta</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+                            
+                            <div class="card col-3">
+                                <img src="../img/ìconos-del-Rock-Argentino.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Rock Argentino</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/this_paulo.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Paulo Londra</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>
+
+                            <div class="card col-3">
+                                <img src="../img/hits_urbanos.jpg" width="80%" height="45%">
+                                    <h5 class="card-title mt-1 c-white">Hits Urbanos</h5>
+                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>           
+                        </div>
+                    </div>
+                        <!-- FIN CARRUSEL 3-->
+                    </div>
+                    </div>
+                </div>
+                 <!-- FIN DE CARROUSEL 3 (Lo que mas le gusta) -->
             </div>
+            </div> <!-- FIN DE CARROUSELES -->
         </div>
-    </div>
-    <div class="footer footerDesk col-md-12 d-none d-md-block d-lg-none">
-        <div class="row mt-4">
-            <div class="col-md-3 box"></div>
-            <div class="col-md-6 reproductor"></div>
-            <div class="col-md-3 box"></div>
-        </div>
-    </div>
-    <!-- FIN VISIBLE SOLO EN MD     desktop -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+
+
+            <!-- FOOTER -->
+            <div class="footerDesk col-md-12 d-none d-sm-block">
+                <div class="row">
+                    <div class="col-3 pl-0">
+                        <div class="row">
+                            <div class="col-6">
+                            <img  src="../img/imgAlbum.jpg" alt="album" width="100%" height="118px">
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <h6 class="c-white ml-1 mt-1">Tal vez</h6>
+                                    <img class="ml-3 mt-2" src="../img/corazon_blanco.png" alt="like" width="12%" height="10%">
+                                </div>
+                                <div class="row">
+                                    <p class="ml-1 mt-5 mb-0 c-white">Paulo londra</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="row">
+                            <div class="col-12 text-center mt-3">
+                                <img src="../img/back.png" alt="anterior"  width="3%" height="55%">
+                                <img class="mr-3 ml-3" src="../img/play.png" alt="play" width="6%" height="100%">
+                                <img src="../img/proximo.png" alt="next"  width="3%" height="55%">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex justify-content-end">
+                                <img src="../img/sonido-musical.png" alt="sonido" height="22px">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="reproductor col-12 pl-0 mt-1">
+                                <div class="load col-8">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="row d-flex justify-content-end">
+                            <img class="mr-3 mt-4" src="../img/comentario.png" alt="comentario" width="8%" height="90%">
+                        </div>
+                        <div class="row">
+                            <div class="col-12 mt-4 d-flex justify-content-end">
+                                <img src="../img/estrella.png" alt="star" width="8%" height="80%">
+                                <img class="ml-2" src="../img/estrella.png" alt="star" width="8%" height="80%">
+                                <img class="ml-2" src="../img/estrella.png" alt="star" width="8%" height="80%">
+                                <img class="ml-2" src="../img/estrella_va.png" alt="star" width="8%" height="80%">
+                                <img class="mr-2 ml-2" src="../img/estrella_va.png" alt="star" width="8%" height="80%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FIN OCULTO SOLO EN XS     desktop -->
+
+    <script src="../js/biblioteca.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
-
 </html>

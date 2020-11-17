@@ -153,6 +153,17 @@
 .btn-aplicar:hover{
     background-color: turquoise;
 }
+.w-mm{
+    height: 100%;
+    width: 130%;
+}
+.w-year{
+    height: 100%;
+    width: 120%;
+}
+.w-month{
+    width: 120%;
+}
 /* --   FOOTER  -- */
 .footerDesk{
     background-color: black;

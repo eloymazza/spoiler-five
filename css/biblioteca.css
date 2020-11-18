@@ -105,6 +105,10 @@
     color: gray;
     right: 6.7rem;
 }
+.title-nav{
+    background-color: #1b2829;
+    justify-content: center;
+}
 
 /*  -- FIN HEADER   -- */
 

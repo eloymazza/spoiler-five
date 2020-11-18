@@ -37,6 +37,11 @@
                             <h2>REGISTRARSE</h2>
                         </div>
                         <div class="form-items-container d-flex justify-content-start">
+                            <div class="form-group-header-container">
+                                <h3>
+                                    Cuenta
+                                </h3>
+                            </div>
                             <div class="input-container">
                                 <label class="form-label">
                                     Correo Electrónico
@@ -53,25 +58,81 @@
                                     <input type="text" class="login-form-input" placeholder="Ingrese Contraseña">
                                 </div>
                             </div>
-                            <div class="input-container d-flex justify-content-center align-items-center">
-                                <input class="mr-2" type="checkbox" >
-                                <label class="form-label remember-me">
-                                    Recordarme
+                            <div class="input-container">
+                                <label class="form-label">
+                                    Confirmar Contraseña
                                 </label>
+                                <div>
+                                    <input type="text" class="login-form-input" placeholder="Reingrese Contraseña">
+                                </div>
+                            </div>
+                            <div class="form-group-header-container">
+                                <h3>
+                                    Personal
+                                </h3>
+                            </div>
+                            <div class="input-container">
+                                <label class="form-label">
+                                    Nombre de Usuario
+                                </label>
+                                <div >
+                                    <input type="text" class="login-form-input" placeholder="Ingrese Nombre de usuario">
+                                </div>
+                            </div>
+                            <div class="date-input-container">
+                                <label class="form-label">
+                                    Fecha de Nacimiento
+                                </label>
+                                <div class="d-flex justify-content-between mt-2 mb-3">
+                                    <select name="" class="date-select">
+                                        <option value="">Día</option>
+                                    </select>
+                                    <select name="" class="date-select">
+                                        <option value="">Mes</option>
+                                    </select>
+                                    <select name="" class="date-select">
+                                        <option value="">Año</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input-container">
+                                <label class="form-label">
+                                    Sexo
+                                </label>
+                                <div class="d-flex justify-content-around mt-2 mb-3">
+                                    <div class="radio-container">
+                                        <input type="radio" name="hombre">
+                                        <label for="hombre" class="form-label-radio">
+                                            Hombre
+                                        </label>
+                                    </div>
+                                    <div class="radio-container">
+                                        <input type="radio" name="hombre">
+                                        <label for="hombre" class="form-label-radio">
+                                            Mujer
+                                        </label>
+                                    </div>
+                                    <div class="radio-container">
+                                        <input type="radio" name="hombre">
+                                        <label for="hombre" class="form-label-radio">
+                                            No binario
+                                        </label>
+                                    </div>
+                                </div>
                             </div>
                             <div  class="input-container col-sm-8 offset-md-2" >
                                 <button type="button" class="btn access-button">
-                                    INICIAR SESIÓN
+                                    REGISTRARSE
                                 </button>
-                            </div>
-                            <div class="d-none d-sm-flex col-sm-4 offset-md-4 mt-3">
-                                <a href="../index.html">
-                                <button type="button" class="btn access-button">
-                                    VOLVER
-                                </button>
-                                </a>
                             </div>
                         </div>
+                    </div>
+                    <div class="d-none d-sm-flex col-sm-4 offset-md-4 back-button">
+                        <a href="../index.html">
+                            <button type="button" class="btn access-button">
+                                VOLVER
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -79,14 +140,14 @@
         </div>
     </main>
     <footer>
-        <div class="container-fluid landing-footer">
+        <div class="container-fluid landing-footer fixed-bottom">
             <div class="row">
                 <!-- Mobile start -->
                 <div class="col-5 d-sm-none d-flex justify-content-center align-items-center">
                     <a href="../index.html">
-                    <button type="button" class="btn access-button">
-                        VOLVER
-                    </button>
+                        <button type="button" class="btn access-button">
+                            VOLVER
+                        </button>
                     </a>
                 </div>
                 <!-- Mobile end -->

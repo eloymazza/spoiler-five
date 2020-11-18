@@ -92,22 +92,21 @@
     z-index: 1;
 }
 
-.user-container {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.p-user{
-    font-size: 75%;
-    color: gray;
-    right: 6.7rem;
-}
 .title-nav{
     background-color: #1b2829;
     justify-content: center;
+}
+
+.max-h-w{
+    max-height: 25px;
+    max-width: 28px;
+}
+
+
+.span-user{
+    color: gray;
+    font-size: 11px;
+    font-weight: 700;
 }
 /*  -- FIN HEADER   -- */
 

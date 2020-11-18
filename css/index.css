@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6, p {
 /* -- Landing Header -- */
 
 .landing-header {
-    height: 8vh;
+    height: 9vh;
     background-color: #040404;
 }
 
@@ -25,7 +25,12 @@ h1, h2, h3, h4, h5, h6, p {
 /* -- Landing Main Content -- */
 
 .landing-main {
-    height: 82%;
+    height: 81vh;
+    background-color: #002526;
+}
+
+.sign-up-main {
+    height: 100%;
     background-color: #002526;
 }
 
@@ -108,10 +113,10 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #040404;
 }
 
-.landing-footer .row {
+/* .landing-footer .row {
     height: inherit;
-}
-
+} */
+/* lo comente porque sino los iconos de las demas paginas no heredaban el mismo tamaño, agregue un mt-3 para acomodarlo */
 .access-button {
     width: 100%;
     background-color: #04CFD2;
@@ -139,6 +144,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .spoiler-logo {
-    height: 75%;
+    max-width: 70%;
+    max-height: 70%;
 }
 

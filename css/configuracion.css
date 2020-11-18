@@ -42,6 +42,7 @@ h1, h2, h3, h4, h5, h6, p {
 .container-desk{
     height: 81vh;
 }
+
 .title-nav{
     background-color: #1b2829;
     justify-content: center;
@@ -118,3 +119,19 @@ body{
     background-color: #002526;
 }
 
+/* ------------------------------------------------- */
+.contenido{
+    background-color:  #1b2829;
+    height: 90%;
+    width: 80%;
+    margin-left: 10%;
+}
+.transparente{
+    width: 100%;
+    height: 5%;
+    background-color: transparent;
+}
+.title-config{
+    width: 100%;
+    border: 3px solid white;
+}

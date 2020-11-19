@@ -38,40 +38,121 @@ h1, h2, h3, h4, h5, h6, p {
 }
 /*  -------------- FIN HEADER   ---------------- */
 
-/* --------------- CONTAINER ---------- */
+/* --------------- CONTAINER ------------------- */
 .container-desk{
     height: 81vh;
 }
+.contenido{
+    background-color:  #1b2829;
+    height: 90%;
+    width: 60%;
+    margin-left: 20%;
+    border: 1px solid white;
 
-.title-nav{
-    background-color: #1b2829;
-    justify-content: center;
-    height: 6vh;
 }
-.navs{
-    background-color: #1b2829;
-    justify-content: center;
-    height: 25vh;
+.transparente{
+    width: 100%;
+    height: 5%;
+    background-color: transparent;
 }
-.img-radius{
-    border-radius: 80px;
-    border:3px solid black;
-}
-.img-artists{
-    border-radius: 80px;
-    border:3px solid white;
+.title-config{
     text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-weight: 700;
+    margin-bottom: 4%;
+    border: 1px solid white;
 }
-.line{
+.title-opciones{
+    text-align: center;
+    justify-content: start;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    /* height: 100%; */
+}
+.t-underline{
+    text-decoration-line: underline;
+}
+.t-underline:hover{
+    color:  #04cfd2;
+}
+.ajustar-content{
+    left: 30%;
+}
+.btnSwitch {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    height: 80%; 
+}
+.btnSwitch input {display:none;}
+.slide {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #48f05b;
+    -webkit-transition: .4s;
+    transition: .4s;
+    padding: 8px;
+    color: #fff;
+}
+.slide:before {
+    position: absolute;
+    content: "";
+    height: 94%;
+    width: 45%;
+    left: 54%;
+    top:1px;
+    bottom: 4px;
     background-color: white;
-    color: white;
-    height: 2px;
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 3%;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
-.title-row{
-    margin-top: 30%;
+input:checked + .slide {
+    background-color: gray;
+    padding-left: 40px;
+}
+input:checked + .slide:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+    left: -20px;
+}
+.slide.redondo {
+    border-radius: 34px;
+}
+.slide.redondo:before {
+    border-radius: 50%;
+}
+.contenido{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.contenido::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+    background: black;
+}
+.contenido::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 10px;
+}
+.btn-plan{
+    font-weight: 600;
+    background-color:  #48f05b;
+    border-radius: 20px;
+    border: none;
+    height: 45%;
+}
+.btn-plan:hover{
+    background-color: green;
 }
 /* ------------- FOOTER ------------ */
 .footer {
@@ -87,10 +168,7 @@ h1, h2, h3, h4, h5, h6, p {
     max-height: 70%;
 }
 /* --------   FIN FOOTER  ----------- */
-.fixed{
-    position: fixed;
-    width: 14%;
-}
+
 /* ------------     COLOURS     --------------- */
 .load{
     background-color: white;
@@ -114,24 +192,12 @@ h1, h2, h3, h4, h5, h6, p {
 .c-section{
     color: #1b2829;
 }
+.c-green{
+    color: #48f05b;
+}
 body{
     overflow-y: hidden;
     background-color: #002526;
 }
 
 /* ------------------------------------------------- */
-.contenido{
-    background-color:  #1b2829;
-    height: 90%;
-    width: 80%;
-    margin-left: 10%;
-}
-.transparente{
-    width: 100%;
-    height: 5%;
-    background-color: transparent;
-}
-.title-config{
-    width: 100%;
-    border: 3px solid white;
-}

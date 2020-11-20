@@ -2,6 +2,7 @@
 body {
     font-family: 'Segoe UI';
     overflow-y: hidden;
+    overflow-x: hidden;
     background-color: #002526;
 }
 h1, h2, h3, h4, h5, h6, p {
@@ -20,6 +21,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .ajustar-col{
     width: 18rem;
+}
+.right-ajust{
+  right: 1.5rem;
 }
 /* -------------    CONTAINER   --------- */
 .container-mob{

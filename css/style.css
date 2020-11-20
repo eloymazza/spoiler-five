@@ -1,73 +1,22 @@
-/* --   NAV  -- */
-.header{
-    border-style: solid;
-    width: 100%;
-    height: 70px;
-}
-.title{
-    border-style: solid;
-    width: 20%;
-    height: 40px;
-}
-.search{
-    border-style: solid;
-    width: 10%;
-    height: 40px;
-}
-.config{
-    border-style: solid;
-    width: 10%;
-    height: 40px;
-}
-/* --   FIN DE NAV  -- */
-
-/* --   CARROUSEL   -- */
-.carrousel{
-    border-style: solid;
-    width: 100%;
-    height: 234px;
-}
-/* --   FIN DE CARROUSEL   -- */
-
-/* --   FOOTER  -- */
-.fot{
-    border-style: solid;
-    width: 100%;
-    height: 40px;
-}
-/* -- FIN FOOTER */
+/* --   NAV  --
 
 
-/* --   EXPLORAR    -- */
-.back{
-    border-style: solid;
-    width: 10%;
-    height: 40px;
+/* ----------------------------     MOBILE      --------------------------- */
+.header-mob{
+    height: 9vh;
+    background-color: black;
 }
-/* --   FIN EXPLORAR    -- */
 
+.container-mob{
+    height: 81vh;
+    background-color: #002526;
+}
 
-/* --   NOTIFICACIONES  -- */
-.not{
-    border-style: solid;
-    border-color: brown;
-    height: 70px;
+.footer-mob{
+    height: 10vh;
+    background-color: black;
 }
-.image{
-    border-style: solid;
-    width: 20%;
-    height: 50px;
-}
-.desc{
-    border-style: solid;
-    width: 60%;
-    height: 50px;
-}
-.logo{
-    border-style: solid;
-    width: 20%;
-    height: 50px;
-}
+
 
 /* -----------------------------    DESKTOP  ----------------------------- */
 .headerDesk{

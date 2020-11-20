@@ -1,0 +1,74 @@
+/* ------------------------ GENERAL ------------- */
+body {
+    font-family: 'Segoe UI';
+    overflow-y: hidden;
+    background-color: #002526;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+/* ----------------------------     MOBILE      -------------------------- */
+.header-mob{
+    height: 9vh;
+    background-color: black;
+}
+.landing-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #04CFD2;
+}
+.ajustar-col{
+    width: 18rem;
+}   
+/* -------------    CONTAINER   --------- */
+.container-mob{
+    height: 81vh;
+    background-color: #002526;
+}
+
+
+/* -------------    FOOTER   --------- */
+.footer-mob{
+    height: 10vh;
+    background-color: black;
+}
+.img-fot-head-mob{
+    max-height: 32px;
+    max-width: 32px;
+    /* width: 100%;
+    height: 100%; */
+}
+.p-small{
+    font-size: 15px;
+}
+
+
+
+
+/* ------------     COLOURS     --------------- */
+.load{
+    background-color: white;
+    height: 10px;
+}
+.c-gray{
+    color: gray;
+}
+.c-lBlue{
+    color: #04cfd2;
+}
+.c-white{
+    color: white;
+}
+.c-white2{
+    color: rgb(209, 209, 209);
+}
+.c-ico{
+    color: #b9b9b9;
+}
+.c-section{
+    color: #1b2829;
+}
+.c-green{
+    color: #48f05b;
+}

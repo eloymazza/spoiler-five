@@ -32,8 +32,38 @@ h1, h2, h3, h4, h5, h6, p {
 .ajustar-p{
     font-size: 90%;
 }
-.row-height-mob{
-    height: 4rem;
+
+.buscar-mob{
+    width: 85%;
+    margin-top: 20%;
+    margin-bottom: 20%;
+}
+.ajustar-col-cont{
+    margin-top: 2rem;
+}
+.ajustar-lupa{
+    position: absolute;
+    max-width: 32px;
+    max-height: 32px;
+    margin-left: 1rem;
+    margin-top: 0.8rem;
+}
+.btn-buscar{
+    border-radius: 20px;
+    width: 100%;
+    height: 3rem;
+}
+
+.border-sugerencia{
+    border: 2px solid #04cfd2;
+    width: 90%;
+}
+
+.ocultar{
+    display: none;
+}
+.mostrar{
+    display: block;
 }
 /* -------------    FOOTER   --------- */
 .footer-mob{
@@ -81,4 +111,10 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .bg-section{
     background-color: #1b2829;
+}
+.bg-transparente{
+    background-color: transparent;
+}
+.c-transparente{
+    color: transparent;
 }

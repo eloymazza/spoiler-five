@@ -14,23 +14,157 @@
 	<div class="header-mob col-12 d-block d-sm-none d-flex align-items-center justify-content-center">
 		<div class="row">
 			<div class="col-2 d-flex justify-content-center">
-				<a href="#">
+				<!-- <a href="#">
 					<img class="img-fot-head-mob" src="../img/volver-flecha.png" alt="">
-				</a>
+				</a> -->
 			</div>
 			<div class="col-8 d-flex justify-content-center ajustar-col">
 				<h1 class="landing-title">BIBLIOTECA</h1>
 			</div>
 			<div class="col-2 d-flex justify-content-center">
-				<a href="#">
+				<a href="buscar.html">
 					<img class="img-fot-head-mob" src="../img/lupa_blanca.png">
 				</a>
 			</div>
 		</div>
 	</div>
 
-	<div class="container-mob d-block d-sm-none">
-	
+    <div class="container-mob d-block d-sm-none">
+        <div class="row">
+            <div class="col-9">
+                <h5 class="ml-3 mt-1 c-white">MIS PLAYLISTS</h5>
+            </div>
+            <div class="col-3 d-flex justify-content-end">
+                <button class="btn-filtrar mt-2 position-absolute" id="btnFiltrar"><img id="imgFiltro" src="../img/filtrar_gris.png"></button>
+                <div id="filtro" class="filtrar">
+                    <div class="col-12"> <h5 class="c-white mt-2">FILTRAR</h5></div>
+                    <div class="col-12"> <p class="mb-0 c-white text-left">POR FECHA</p></div>
+                    <div class="row mt-1 pl-2 pr-4 d-flex justify-content-around">
+                        <div class="col-4">
+                                <select class="w-mm btn-drop btn-sm" name="select">
+                                    <option value="menor">Mayor a</option> 
+                                    <option value="mayor" selected>Menor a</option>
+                                </select>
+                        </div>
+                        
+                        <div class="col-4">
+                            <!-- <div class="ml-1"> -->
+                            
+                                <input class="w-year btn-drop btn-sm border-0 ml-1" type="number" placeholder="Año">
+                                <!-- </div> -->
+                        </div>
+
+                        <div class="col-4">
+                                <input class="w-month btn-drop btn-sm border-0" type="month" placeholder="Mes">
+                        </div>
+                </div>
+
+                    <div class="col-12"> <p class="c-white text-left mb-0">POR CATEGORIA</p></div>
+
+                    <div class="col-12 text-center mt-1">
+                                <select class="w-100 btn-drop btn-sm" name="select">
+                                    <option value="cumbia">Cumbia</option> 
+                                    <option value="value2" selected>Regueton</option>
+                                    <option value="value3">Pop</option>
+                                </select>
+                    </div>
+
+                    <div class="col-12">
+                        <button class="btn-aplicar bg-lblue b-r w-100 mt-3 btn-sm border-0">APLICAR FILTROS</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carrousel-mob ml-3 mt-4">
+                <div class="card">
+                    <img class="max-h-w-card" src="../img/fiesta.jpg">
+                    <h6 class="card-title mt-1 c-white">De fiesta</h6>
+                    <p class="c-gray">Unete al party con <br> estos hits para darle <br> hasta que amanezca.</p>
+                </div>
+                <div class="card">
+                    <img class="max-h-w-card" src="../img/fiesta.jpg">
+                    <h6 class="card-title mt-1 c-white">De fiesta</h6>
+                    <p class="c-gray">Unete al party con <br> estos hits para darle <br> hasta que amanezca.</p>
+                </div>
+                <div class="card">
+                    <img class="max-h-w-card" src="../img/fiesta.jpg">
+                    <h6 class="card-title mt-1 c-white">De fiesta</h6>
+                    <p class="c-gray">Unete al party con <br> estos hits para darle <br> hasta que amanezca.</p>
+                </div>
+                <div class="card">
+                    <img class="max-h-w-card" src="../img/fiesta.jpg">
+                    <h6 class="card-title mt-1 c-white">De fiesta</h6>
+                    <p class="c-gray">Unete al party con <br> estos hits para darle <br> hasta que amanezca.</p>
+                </div>
+                <div class="card">
+                    <img class="max-h-w-card" src="../img/fiesta.jpg">
+                    <h6 class="card-title mt-1 c-white">De fiesta</h6>
+                    <p class="c-gray">Unete al party con <br> estos hits para darle <br> hasta que amanezca.</p>
+                </div>
+        </div>  
+
+                <div class="col-12 mt-5">
+                    <h5 class="c-white">MIS DESCARGAS</h5>
+                </div>
+                <div class="carrousel-mob ml-3 mt-2">
+                    <div class="card">
+                        <img class="max-h-w-card" src="../img/fiesta.jpg">
+                        <h6 class="card-title mt-1 c-white">De fiesta</h6>
+                        <p class="c-gray">Unete al party con <br> estos hits para darle <br> hasta que amanezca.</p>
+                    </div>
+                    <div class="card">
+                        <img class="max-h-w-card" src="../img/fiesta.jpg">
+                        <h6 class="card-title mt-1 c-white">De fiesta</h6>
+                        <p class="c-gray">Unete al party con <br> estos hits para darle <br> hasta que amanezca.</p>
+                    </div>
+                    <div class="card">
+                        <img class="max-h-w-card" src="../img/fiesta.jpg">
+                        <h6 class="card-title mt-1 c-white">De fiesta</h6>
+                        <p class="c-gray">Unete al party con <br> estos hits para darle <br> hasta que amanezca.</p>
+                    </div>
+                    <div class="card">
+                        <img class="max-h-w-card" src="../img/fiesta.jpg">
+                        <h6 class="card-title mt-1 c-white">De fiesta</h6>
+                        <p class="c-gray">Unete al party con <br> estos hits para darle <br> hasta que amanezca.</p>
+                    </div>
+                    <div class="card">
+                        <img class="max-h-w-card" src="../img/fiesta.jpg">
+                        <h6 class="card-title mt-1 c-white">De fiesta</h6>
+                        <p class="c-gray">Unete al party con <br> estos hits para darle <br> hasta que amanezca.</p>
+                    </div>
+            </div>  
+
+            <div class="col-12 mt-5">
+                <h5 class="c-white">FAVORITOS</h5>
+            </div>
+            <div class="carrousel-mob ml-3 mt-2">
+                <div class="card">
+                    <img class="max-h-w-card" src="../img/fiesta.jpg">
+                    <h6 class="card-title mt-1 c-white">De fiesta</h6>
+                    <p class="c-gray">Unete al party con <br> estos hits para darle <br> hasta que amanezca.</p>
+                </div>
+                <div class="card">
+                    <img class="max-h-w-card" src="../img/fiesta.jpg">
+                    <h6 class="card-title mt-1 c-white">De fiesta</h6>
+                    <p class="c-gray">Unete al party con <br> estos hits para darle <br> hasta que amanezca.</p>
+                </div>
+                <div class="card">
+                    <img class="max-h-w-card" src="../img/fiesta.jpg">
+                    <h6 class="card-title mt-1 c-white">De fiesta</h6>
+                    <p class="c-gray">Unete al party con <br> estos hits para darle <br> hasta que amanezca.</p>
+                </div>
+                <div class="card">
+                    <img class="max-h-w-card" src="../img/fiesta.jpg">
+                    <h6 class="card-title mt-1 c-white">De fiesta</h6>
+                    <p class="c-gray">Unete al party con <br> estos hits para darle <br> hasta que amanezca.</p>
+                </div>
+                <div class="card">
+                    <img class="max-h-w-card" src="../img/fiesta.jpg">
+                    <h6 class="card-title mt-1 c-white">De fiesta</h6>
+                    <p class="c-gray">Unete al party con <br> estos hits para darle <br> hasta que amanezca.</p>
+                </div>
+            </div>  
+
 	</div>
 
 	<div class="footer-mob col-12 d-block d-sm-none d-flex align-items-center justify-content-center">
@@ -179,7 +313,7 @@
                 <!-- CARROUSEL 1 (Lo ultimo) -->
                 <div class="row">
                                                     <!-- LO ULTIMO --> 
-                <div id="carouselExampleInterval" class="carousel slide tCenter mt-3" data-ride="carousel">
+                <div id="carouselExampleInterval" class="carousel slide mt-3" data-ride="carousel">
                     <div class="row mr-6">
                         <div class="col-9">
                             <h5 class="ml-3 c-white">MIS PLAYLISTS</h5>
@@ -292,8 +426,8 @@
 
 
                 <!-- CARROUSEL 2 (Escuchados recientemente) -->
-                <div class="row">
-                    <div id="carouselExampleIntervalTwo" class="carousel slide tCenter" data-ride="carousel">
+                <div class="row mt-4">
+                    <div id="carouselExampleIntervalTwo" class="carousel slide" data-ride="carousel">
                     <div class="row mr-6">
                         <div class="col-9">
                             <h5 class="ml-3 c-white">MIS DESCARGAS</h5>
@@ -406,8 +540,8 @@
 
 
                  <!-- CARROUSEL 3 (Lo que mas le gusta) -->
-                <div class="row">
-                    <div id="carouselExampleIntervalThree" class="carousel slide tCenter" data-ride="carousel">
+                <div class="row mt-4">
+                    <div id="carouselExampleIntervalThree" class="carousel slide" data-ride="carousel">
                     <div class="row mr-6">
                         <div class="col-9">
                             <h5 class="ml-3 c-white">FAVORITOS</h5>

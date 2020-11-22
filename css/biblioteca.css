@@ -25,7 +25,28 @@ h1, h2, h3, h4, h5, h6, p {
 .container-mob{
     height: 81vh;
     background-color: #002526;
+    overflow-y: scroll;
+    width: auto;
+    /* height: 16px; */
+    /* padding: 20%; */
+    /* margin-right: 5rem; */
+    white-space: nowrap;
 }
+.carrousel-mob{
+    overflow-x: auto;
+}
+.card{
+    width: 100px;
+    height: 50px;
+    margin-right: 5rem;
+    padding: 0;
+    display: inline-block
+}
+.max-h-w-card{
+    max-height: 160px;
+    max-width: 160px;
+}
+
 
 
 /* -------------    FOOTER   --------- */

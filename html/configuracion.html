@@ -9,7 +9,61 @@
 </head>
 <body>
 	
-   <!-- OCULTO SOLO EN XS     desktop -->
+	<!-- MOBILE -->
+	<div class="header-mob col-12 d-block d-sm-none d-flex align-items-center justify-content-center">
+		<div class="row">
+			<div class="col-2 d-flex justify-content-center">
+				<a href="#">
+					<img class="img-fot-head-mob" src="../img/volver-flecha.png" alt="">
+				</a>
+			</div>
+			<div class="col-8 d-flex justify-content-center">
+				<h1 class="landing-title">CONFIGURACION</h1>
+			</div>
+			<div class="col-2 d-flex justify-content-center">
+				<a href="#">
+					<img class="img-fot-head-mob" src="../img/lupa_blanca.png">
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-mob d-block d-sm-none">
+	
+	</div>
+
+	<div class="footer-mob col-12 d-block d-sm-none d-flex align-items-center justify-content-center">
+		<div class="row mt-2">
+			<div class="col-3 text-center">
+				<a href="home.html">
+					<img class="img-fot-head-mob" src="../img/casa.png" alt="">
+				</a>
+				<p class="c-lBlue d-flex justify-content-center p-small">HOME</p>
+			</div>
+			<div class="col-3 text-center">
+				<a href="explorar.html">
+					<img class="img-fot-head-mob" src="../img/explorar_gris.png" alt="">
+				</a>
+				<p class="c-ico d-flex justify-content-center p-small">EXPLORAR</p>
+			</div>
+			<div class="col-3 text-center">
+				<a href="notificaciones.html">
+					<img class="img-fot-head-mob" src="../img/campana.png" alt="">
+				</a>
+				<p class="c-ico d-flex justify-content-center p-small">NOTIF.</p>
+			</div>
+			<div class="col-3 text-center">
+				<a href="biblioteca.html">
+					<img class="img-fot-head-mob" src="../img/libro.png" alt="">
+				</a>
+				<p class="c-ico d-flex justify-content-center p-small">BIBLIOTECA</p>
+			</div>
+		</div>
+	</div>
+	<!-- MOBILE -->
+
+
+   <!-- OCULTO SOLO EN XS     DESKTOP -->
    <div class="headerDesk col-12 d-none d-sm-block">
 	<div class="row h-100">
 		<div class="col-2 d-sm-flex align-items-center">
@@ -48,15 +102,142 @@
 	<div class="container-desk d-none d-sm-block">
 		<div class="row transparente"></div>
 		<div class="contenido">
-			<div class="row title-config">
+			<div class="row">
 				<div class="col-12">
-					<h4 class="c-white">CONFIGURACION</h4>
+					<h3 class="c-white title-config">CONFIGURACION</h3>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col-6 ajustar-content">
+					<h4 class="c-gray title-opciones mt-4">AYUDA</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 ajustar-content">
+					<a href="ayuda.html"><h5 class="c-white title-opciones t-underline">Recibir ayuda</h5></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 ajustar-content">
+					<h4 class="c-gray title-opciones mt-4">IDIOMA</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 ajustar-content">
+					<h5 class="c-white title-opciones">Elegir idioma</h5>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 ajustar-content">
+					<select class="w-100 btn-drop btn-sm" name="select">
+						<option value="value1">Alemán</option>
+						<option value="value2">Árabe</option>
+						<option value="value3">Chino</option>
+						<option value="value4" selected>Español</option>
+						<option value="value5">Frances</option>
+						<option value="value6">Ingles</option> 
+						<option value="value7">Portugués</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 ajustar-content">
+					<h4 class="c-gray title-opciones mt-4">CONTENIDO EXPLICITO</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 ajustar-content">
+					<div class="row">
+						<div class="col-8">
+							<h5 class="c-white title-opciones text-left">Permitir reproduccion de contendio explicito</h5>
+							</div>
+							<div class="col-4">
+								<label class="btnSwitch">
+									<input type="checkbox">
+									<div class="slide redondo t-center"></div>
+								</label>
+							</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 ajustar-content">
+					<h4 class="c-gray title-opciones mt-4">CALIDAD DE LA MUSICA</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 ajustar-content">
+					<h5 class="c-white title-opciones">Calidad de streaming</h5>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 ajustar-content">
+					<select class="w-100 btn-drop btn-sm" name="select">
+						<option value="value1" selected>Automatico</option>
+						<option value="value2">Bajo</option>
+						<option value="value3">Normal</option>
+						<option value="value4">Alto</option>
+						<option value="value5">Muy alto</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 ajustar-content">
+					<h4 class="c-gray title-opciones mt-4">AUTOPLAY</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 ajustar-content">
+					<div class="row">
+						<div class="col-8">
+							<h5 class="c-white title-opciones text-left">Reproducir automaticamente cuando termine tu música</h5>
+							</div>
+							<div class="col-4">
+								<label class="btnSwitch">
+									<input type="checkbox">
+									<div class="slide redondo t-center"></div>
+								</label>
+							</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 ajustar-content">
+					<h4 class="c-gray title-opciones mt-4">CAMBIAR DE PLAN</h4>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 ajustar-content">
+					<h5 class="c-white title-opciones">Plan:</h5>
+					<h4 class="c-green title-opciones">FAMILIAR</h4>
+					<a href="planes.html"><button class="btn-plan mt-1">CAMBIAR DE PLAN</button></a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6 ajustar-content">
+					<h4 class="c-gray title-opciones mt-4">ARCHIVOS LOCALES</h4>
+				</div>
+			</div>
+			<div class="row mb-4">
+				<div class="col-6 ajustar-content">
+					<div class="row">
+						<div class="col-8">
+							<h5 class="c-white title-opciones text-left">Mostrar archivos <br> locales</h5>
+							</div>
+							<div class="col-4">
+								<label class="btnSwitch">
+									<input type="checkbox">
+									<div class="slide redondo t-center"></div>
+								</label>
+							</div>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</div> 
 
-	<footer>
+	<footer class="d-none d-sm-block">
 		<div class="container-fluid footer">
 			<div class="row">
 				<!-- Desktop start -->
@@ -75,8 +256,7 @@
 			</div>
 		</div>
 	</footer>
-
-<!-- FIN OCULTO SOLO EN XS     desktop -->
+<!-- FIN OCULTO SOLO EN XS     DESKTOP -->
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

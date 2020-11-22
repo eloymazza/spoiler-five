@@ -1,73 +1,90 @@
-/* --   NAV  -- */
-.header{
-    border-style: solid;
-    width: 100%;
-    height: 70px;
+/* ------------------------ GENERAL ------------- */
+body {
+    font-family: 'Segoe UI';
+    overflow-y: hidden;
+    background-color: #002526;
 }
-.title{
-    border-style: solid;
-    width: 20%;
-    height: 40px;
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
 }
-.search{
-    border-style: solid;
-    width: 10%;
-    height: 40px;
-}
-.config{
-    border-style: solid;
-    width: 10%;
-    height: 40px;
-}
-/* --   FIN DE NAV  -- */
 
-/* --   CARROUSEL   -- */
-.carrousel{
-    border-style: solid;
-    width: 100%;
-    height: 234px;
+/* ----------------------------     MOBILE      -------------------------- */
+.header-mob{
+    height: 9vh;
+    background-color: black;
 }
-/* --   FIN DE CARROUSEL   -- */
-
-/* --   FOOTER  -- */
-.fot{
-    border-style: solid;
-    width: 100%;
-    height: 40px;
+.landing-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #04CFD2;
 }
-/* -- FIN FOOTER */
-
-
-/* --   EXPLORAR    -- */
-.back{
-    border-style: solid;
-    width: 10%;
-    height: 40px;
+.ajustar-col{
+    width: 18rem;
+} 
+.max-h-w-mob{
+    max-height: 32px;
+    max-width: 32px;
 }
-/* --   FIN EXPLORAR    -- */
-
-
-/* --   NOTIFICACIONES  -- */
-.not{
-    border-style: solid;
-    border-color: brown;
-    height: 70px;
+/* -------------    CONTAINER   --------- */
+.container-mob{
+    height: 81vh;
+    background-color: #002526;
+    overflow-y: scroll;
+    width: auto;
+    /* height: 16px; */
+    /* padding: 20%; */
+    /* margin-right: 5rem; */
+    white-space: nowrap;
 }
-.image{
-    border-style: solid;
-    width: 20%;
+.carrousel-mob{
+    overflow-x: auto;
+}
+.card{
+    width: 100px;
     height: 50px;
+    margin-right: 5rem;
+    padding: 0;
+    display: inline-block
 }
-.desc{
-    border-style: solid;
-    width: 60%;
-    height: 50px;
+.max-h-w-card{
+    max-height: 160px;
+    max-width: 160px;
 }
-.logo{
-    border-style: solid;
-    width: 20%;
-    height: 50px;
+.max-h-w-expl{
+    max-height: 160px;
+    max-width: 160px;
 }
+.img-fondo-mob{
+    background-color: black;
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-title{
+    color: white;
+    width: 10rem;
+    text-align: center;
+}
+/* -------------    FOOTER   --------- */
+.footer-mob{
+    height: 10vh;
+    background-color: black;
+}
+.img-fot-head-mob{
+    max-height: 32px;
+    max-width: 32px;
+    /* width: 100%;
+    height: 100%; */
+}
+.p-small{
+    font-size: 15px;
+}
+
+
+
+
 
 /* -----------------------------    DESKTOP  ----------------------------- */
 .headerDesk{
@@ -242,8 +259,4 @@
 
 .c-section{
     color: #1b2829;
-}
-body{
-    overflow-y: hidden;
-    background-color: #002526;
 }

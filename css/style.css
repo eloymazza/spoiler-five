@@ -31,9 +31,6 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #002526;
     overflow-y: scroll;
     width: auto;
-    /* height: 16px; */
-    /* padding: 20%; */
-    /* margin-right: 5rem; */
     white-space: nowrap;
 }
 .carrousel-mob{

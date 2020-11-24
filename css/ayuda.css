@@ -1,0 +1,320 @@
+/* ------------------------ GENERAL ------------- */
+body {
+    font-family: 'Segoe UI';
+    overflow-y: hidden;
+    background-color: #002526;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+
+.header-mob{
+    height: 9vh;
+    background-color: black;
+}
+
+.landing-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #04CFD2;
+}
+
+.ajustar-col {
+    width: 18rem;
+}   
+
+.help-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.help-title {
+    color: white;
+}
+
+.help-container {
+    background-color: #1B2829;
+    border: 1px solid gray;
+    margin-bottom: 15vh;
+}
+
+.help-subtitle-container {
+    margin-top: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-mob {
+    overflow-y: scroll;
+    height: 81vh;
+    background-color: #002526;
+}
+
+.help-search-container {
+    position: relative;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+
+}
+
+.search-help-input {
+    height: 50%;
+    width: 100%;
+    border-radius: 15px;
+    padding-left: 13%;
+}
+
+.search-help-image {
+    position: absolute;
+    left: 8%;
+    width: 1.5em;
+}
+
+.search-help-input-desktop {
+    height: 60%;
+    width: 100%;
+    border-radius: 15px;
+    padding-left: 13%;
+    font-size: 28px;
+}
+
+.search-help-image-desktop {
+    position: absolute;
+    left: 5%;
+    width: 1.5em;
+}
+
+
+.help-subtitle {
+    text-align: center;
+    color: white;
+}
+
+.help-subtitle-desktop {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.dot {
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    border-radius: 50%;
+    background-color: turquoise;
+}
+
+.quest-item-title {
+    color: white;
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.quest-item-title-desktop {
+    color: white;
+    display: inline-block;
+    margin-left: 5px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.question-content {
+    padding-left: 1em;
+    padding-top: .75em;
+    color: gray;
+}
+
+.custom-help-container {
+    background-color: transparent;
+    position: fixed;
+    bottom: 10vh;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+}   
+
+.custom-help {
+    border-radius: 10px 10px 0px 0px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border: 1px solid grey;
+}
+
+.custom-help-desktop {
+    color: white;
+    font-weight: bolder;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+.custom-help span {
+    color: white;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 0 15px;
+}
+
+.help-title-desktop {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    margin: .5em
+}
+
+/* Main Help Desktop */
+
+.main-help-desktop {
+    height: 81vh;
+    overflow-y: scroll;
+}
+
+.help-container-desktop {
+    background-color: #1B2829;
+    border: 1px solid grey;
+}
+
+/* -------------    FOOTER   --------- */
+
+.footer-mob{
+    height: 10vh;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+}
+
+.img-fot-head-mob{
+    max-height: 32px;
+    max-width: 32px;
+}
+.p-small{
+    font-size: 15px;
+    color: gray;
+}
+
+
+/* spoiler bot */ 
+.spoiler-bot-container {
+    position: fixed;
+    bottom: 10vh;
+    right: 19px;
+    background-color: white;
+    width: 20vw;
+    height: 30vh;
+    box-sizing: border-box;
+    border-width: 1px 1px 0px .5px;
+    border-style: solid;
+    border-color: gray;
+}
+
+.bot-header-container  {
+    display: flex;
+    background-color: #002526;
+    height: 15%;
+}
+
+.bot-image-container {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bot-name-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.chat-icon-container {
+    width: 15%;
+    height: 100%;
+}
+
+.chat-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bot-name {
+    font-size: larger;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.bot-main-container{
+    background-color: white;
+    height: 65%;
+    display: flex;
+}
+
+.bot-chatting-image-container {
+    width: 15%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bot-chat-content {
+    width: 55%;
+    height: 30%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.bot-message {
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+    color: gray;
+}
+
+.bot-chat-time {
+    width: 30%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bot-footer-container {
+    background-color: #002526;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    position: relative;
+}
+
+.chatbox-input {
+    width: 95%;
+    height: 70%;
+    border-radius: 10px;
+    padding-left: 3%;
+    color: grey;
+    font-weight: bold;
+}
+
+.send-icon {
+    position: absolute;
+    height: 80%;
+    top: 7%;
+    right: 4%;
+}
+

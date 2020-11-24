@@ -170,15 +170,9 @@ h1, h2, h3, h4, h5, h6, p {
     height: 22vh;
 }
 .reproductor{
-    /* border-style: solid; */
-    /* border-color: rgb(0, 38, 253); */
     background-color: gray;
     height: 10px;
 }
-/* .bottom{
-    position: relative;
-    top: 6rem;
-} */
 
 
 /* EXPLORAR DESKTOP */

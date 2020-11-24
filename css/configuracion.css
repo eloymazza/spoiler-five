@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6, p {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #48f05b;
+    background-color: #04cfd2;
     -webkit-transition: .4s;
     transition: .4s;
     padding: 8px;
@@ -93,13 +93,13 @@ input:checked + .slide-mob:before {
 }
 .btn-plan-mob{
     font-weight: 600;
-    background-color:  #48f05b;
+    background-color:  #04cfd2;
     border-radius: 20px;
     border: none;
     height: 30%;
 }
 .btn-plan-mob:hover{
-    background-color: green;
+   color: white;
 }
 /* -------------    FOOTER   --------- */
 .footer-mob{
@@ -210,7 +210,7 @@ input:checked + .slide-mob:before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #48f05b;
+    background-color: #04cfd2;
     -webkit-transition: .4s;
     transition: .4s;
     padding: 8px;
@@ -259,13 +259,13 @@ input:checked + .slide:before {
 }
 .btn-plan{
     font-weight: 600;
-    background-color:  #48f05b;
+    background-color:  #04cfd2;
     border-radius: 20px;
     border: none;
     height: 45%;
 }
 .btn-plan:hover{
-    background-color: green;
+   color: white;
 }
 /* ------------- FOOTER ------------ */
 .footer{

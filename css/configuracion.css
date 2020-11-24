@@ -23,9 +23,84 @@ h1, h2, h3, h4, h5, h6, p {
 .container-mob{
     height: 81vh;
     background-color: #002526;
+    overflow-y: scroll;
 }
-
-
+.img-perfil{
+    max-width: 80px;
+    max-height: 80px;
+    border-radius: 4rem;
+    border: 1px solid white;
+}
+.row-config-mob{
+    background-color: #1b2829;
+    margin-right: 2%;
+    margin-left: 2%;
+    border: 1px solid white;
+}
+.login-form-input {
+    width: 100%;  
+    height: 3em;
+    padding-left: .5em;
+  }
+/* button */
+.btnSwitch-mob {
+    position: relative;
+    display: inline-block;
+    width: 4rem;
+    height: 2rem; 
+}
+.btnSwitch-mob input {display:none;}
+.slide-mob {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #04cfd2;
+    -webkit-transition: .4s;
+    transition: .4s;
+    padding: 8px;
+    color: #fff;
+}
+.slide-mob:before {
+    position: absolute;
+    content: "";
+    height: 94%;
+    width: 45%;
+    left: 54%;
+    top:1px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slide-mob {
+    background-color: gray;
+    padding-left: 40px;
+}
+input:checked + .slide-mob:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+    left: -20px;
+}
+.slide-mob.redondo-mob {
+    border-radius: 34px;
+}
+.slide-mob.redondo-mob:before {
+    border-radius: 50%;
+}
+.btn-plan-mob{
+    font-weight: 600;
+    background-color:  #04cfd2;
+    border-radius: 20px;
+    border: none;
+    height: 30%;
+}
+.btn-plan-mob:hover{
+   color: white;
+}
 /* -------------    FOOTER   --------- */
 .footer-mob{
     height: 10vh;
@@ -34,8 +109,8 @@ h1, h2, h3, h4, h5, h6, p {
 .img-fot-head-mob{
     max-height: 32px;
     max-width: 32px;
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
 }
 .p-small{
     font-size: 15px;
@@ -135,7 +210,7 @@ h1, h2, h3, h4, h5, h6, p {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #48f05b;
+    background-color: #04cfd2;
     -webkit-transition: .4s;
     transition: .4s;
     padding: 8px;
@@ -184,13 +259,13 @@ input:checked + .slide:before {
 }
 .btn-plan{
     font-weight: 600;
-    background-color:  #48f05b;
+    background-color:  #04cfd2;
     border-radius: 20px;
     border: none;
     height: 45%;
 }
 .btn-plan:hover{
-    background-color: green;
+   color: white;
 }
 /* ------------- FOOTER ------------ */
 .footer{
@@ -233,6 +308,8 @@ input:checked + .slide:before {
 .c-green{
     color: #48f05b;
 }
-
+.bg-section{
+    background-color: #1b2829;
+}
 
 /* ------------------------------------------------- */

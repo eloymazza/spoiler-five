@@ -25,6 +25,9 @@ h1, h2, h3, h4, h5, h6, p {
 .container-mob{
     height: 81vh;
     background-color: #002526;
+    overflow-y: scroll;
+    width: auto;
+    white-space: nowrap;
 }
 .border-mob{
     border: 1px solid #04CFD2;
@@ -65,6 +68,37 @@ h1, h2, h3, h4, h5, h6, p {
 .mostrar{
     display: block;
 }
+.img-resultado{
+    /* border-radius: 5rem; */
+    border: 1px solid white;
+    max-width: 8rem;
+    max-height: 8rem;
+}
+.ico-result-busqu{
+    max-height: 27px;
+    max-width: 27px;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: white;
+}
+
+.carrousel-mob{
+    overflow-x: auto;
+}
+.card{
+    width: 100px;
+    height: 50px;
+    margin-right: 5rem;
+    padding: 0;
+    display: inline-block
+}
+.max-h-w-card{
+    max-height: 160px;
+    max-width: 160px;
+}
+
 /* -------------    FOOTER   --------- */
 .footer-mob{
     height: 10vh;
@@ -73,13 +107,169 @@ h1, h2, h3, h4, h5, h6, p {
 .img-fot-head-mob{
     max-height: 32px;
     max-width: 32px;
-    /* width: 100%;
-    height: 100%; */
 }
 .p-small{
     font-size: 15px;
 }
 
+/* -----------------------------    DESKTOP  ----------------------------- */
+.headerDesk{
+    /* border-style: solid; */
+    /* border-color: chartreuse; */
+    background-color: black;
+    width: 100%;
+    height: 9vh;
+}
+
+.searchDesk{
+    position: relative;
+    padding-left: 9%;
+    border-radius: 20px;
+    background-color: white;
+    width: 100%;
+    height: 50%;
+}
+.ajustarLupa{
+    position: absolute;
+    left: 4%;
+    z-index: 1;
+}
+
+
+.title-nav{
+    background-color: #1b2829;
+    justify-content: center;
+}
+
+.max-h-w{
+    max-height: 25px;
+    max-width: 28px;
+}
+
+
+.span-user{
+    color: gray;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/*  -- FIN HEADER   -- */
+
+/* --   CONTAINER   -- */
+.navs{
+    /* border-style: solid; */
+    background-color: #1b2829;
+    justify-content: center;
+    height: 25.33vh;
+}
+
+.carrouselDesk{
+    border-style: solid;
+    height: 250px;
+}
+.btnNav{
+    border-style: solid;
+    width: 20%;
+    height: 50px;
+}
+
+/* --   FOOTER  -- */
+.footerDesk{
+    background-color: black;
+    height: 22vh;
+}
+.reproductor{
+    /* border-style: solid; */
+    /* border-color: rgb(0, 38, 253); */
+    background-color: gray;
+    height: 10px;
+}
+/* .bottom{
+    position: relative;
+    top: 6rem;
+} */
+
+
+/* EXPLORAR DESKTOP */
+.carrouselExpl{
+    border-style: solid;
+    height: 25%;
+}
+
+.homeDesk {
+    height: 75vh;
+    overflow-y: scroll;
+}
+
+.homeDesk::-webkit-scrollbar{
+    width: 10px;
+    background: black;
+}
+
+.homeDesk::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 10px;
+}
+
+.card{
+    background-color: transparent;
+    border: 0px;
+}
+
+.fixed{
+    position: fixed;
+    width: 14%;
+}
+.top-5-canciones{
+    background-color: black;
+    color: white;
+    width: 70%;
+    height: 3rem;
+    border: 1px solid white;
+}
+.canciones{
+    background-color: #1b2829;
+    color: white;
+    width: 70%;
+    height: 3rem;
+    border: 1px solid white;
+}
+.img-section{
+    max-width: 8rem;
+    max-height: 8rem;
+    border: 1px solid white;
+}
+/* -----    CARROUSEL   ---- */
+.previous{
+    display: flex;
+    justify-content: end;
+}
+.sr{
+    display: flex;
+    justify-content: end;  
+}
+
+.mr-6{
+    margin-right: 4rem;
+}
+.btnNexts{
+    width: 80%;
+}
+.card{
+    height: 30%;
+    width: 25%;
+}
+.ocultar{
+    display: none;
+}
+.mostrar{   
+    display: block;
+    }
+.btn-add-image{
+    background: transparent;
+    border: none;
+}
+/* -----    CARROUSEL   ---- */
 
 
 

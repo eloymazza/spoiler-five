@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/configuracion.css">
-	<title>Notificaciones</title>
+	<title>Configuracion</title>
 </head>
 <body>
 	
@@ -21,15 +21,88 @@
 				<h1 class="landing-title">CONFIGURACION</h1>
 			</div>
 			<div class="col-2 d-flex justify-content-center">
-				<a href="#">
+				<a href="buscar.html">
 					<img class="img-fot-head-mob" src="../img/lupa_blanca.png">
 				</a>
 			</div>
 		</div>
 	</div>
 
-	<div class="container-mob d-block d-sm-none">
-	
+	<div class="container-mob col-12 d-block d-sm-none">
+			<div class="row">
+				<div class="col-4 pr-0 mt-2">
+					<img class="img-perfil" src="../img/chico.png" alt="">
+				</div>
+				<div class="col-8 text-left pl-0 mt-2">
+					<h4 class="c-gray">John Ragnarasson</h4>
+					<a href="perfil.html">
+						<h5 class="c-white mt-2">Ver perfl</h5>
+					</a>
+				</div>
+			</div>
+			<div class="row row-config-mob mt-2 mb-2">
+				<div class="col-12">
+					<h4 class="c-gray">AYUDA</h4>
+					<a href="">
+						<h5 class="c-white">Recibir ayuda</h5>
+					</a>
+				</div>
+				<div class="col-12 mt-4	">
+					<h4 class="c-gray">IDIOMA</h4>
+					<h5 class="c-white">Elegir idioma</h5>
+						<select class="w-100 btn-drop btn-sm mt-1" name="select">
+							<option value="value1">Alemán</option>
+							<option value="value2">Árabe</option>
+							<option value="value3">Chino</option>
+							<option value="value4" selected>Español</option>
+							<option value="value5">Frances</option>
+							<option value="value6">Ingles</option> 
+							<option value="value7">Portugués</option>
+						</select>
+				</div>
+				<div class="col-12 mt-5">
+					<h4 class="c-gray">CONTENIDO EXPLICITO</h4>
+					<h5 class="c-white">Permitir la reproduccion de contenido explicito</h5>
+					<label class="btnSwitch-mob mt-1">
+						<input type="checkbox">
+						<div class="slide-mob redondo-mob t-center"></div>
+					</label>
+				</div>
+				<div class="col-12 mt-4">
+					<h4 class="c-gray">CALIDAD DE LA MÚSICA</h4>
+					<h5 class="c-white">Calidad de streaming</h5>
+					<select class="w-100 btn-drop btn-sm" name="select">
+						<option value="value1" selected>Automatico</option>
+						<option value="value2">Bajo</option>
+						<option value="value3">Normal</option>
+						<option value="value4">Alto</option>
+						<option value="value5">Muy alto</option>
+					</select>
+				</div>
+				<div class="col-12 mt-5">
+					<h4 class="c-gray">AUTOPLAY</h4>
+					<h5 class="c-white">Reproducir automaticamente cuando termine tu música</h5>
+					<label class="btnSwitch-mob mt-1">
+						<input type="checkbox">
+						<div class="slide-mob redondo-mob t-center"></div>
+					</label>
+				</div>
+				<div class="col-12 mt-4">
+					<h4 class="c-gray">CAMBIAR DE PLAN</h4>
+					<h5 class="c-white">Plan</h5>
+					<h4 class="c-lBlue title-opciones">FAMILIAR</h4>
+					<a href="planes.html"><button class="btn-plan-mob mt-1">CAMBIAR DE PLAN</button></a>
+				</div>
+				<div class="col-12 mt-5">
+					<h4 class="c-gray">ARCHIVOS LOCALES</h4>
+					<h5 class="c-white">Mostrar archivos locales</h5>
+					<label class="btnSwitch-mob mt-1">
+						<input type="checkbox">
+						<div class="slide-mob redondo-mob t-center"></div>
+					</label>
+				</div>
+			</div>
+
 	</div>
 
 	<div class="footer-mob col-12 d-block d-sm-none d-flex align-items-center justify-content-center">
@@ -209,7 +282,7 @@
 			<div class="row">
 				<div class="col-6 ajustar-content">
 					<h5 class="c-white title-opciones">Plan:</h5>
-					<h4 class="c-green title-opciones">FAMILIAR</h4>
+					<h4 class="c-lBlue title-opciones">FAMILIAR</h4>
 					<a href="planes.html"><button class="btn-plan mt-1">CAMBIAR DE PLAN</button></a>
 				</div>
 			</div>

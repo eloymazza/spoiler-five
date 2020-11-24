@@ -67,6 +67,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 /* -----------------------------    DESKTOP  ----------------------------- */
+/* --- HEADER --- */
 .headerDesk{
     /* border-style: solid; */
     /* border-color: chartreuse; */
@@ -138,10 +139,6 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: gray;
     height: 10px;
 }
-/* .bottom{
-    position: relative;
-    top: 6rem;
-} */
 
 
 /* EXPLORAR DESKTOP */
@@ -206,6 +203,15 @@ h1, h2, h3, h4, h5, h6, p {
     border: none;
 }
 /* -----    CARROUSEL   ---- */
+
+/* ---    EFECTO 3D    --- */
+
+.efecto-hover:hover{
+    transition: 1s;
+    transform: perspective(2000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(80px);
+    box-shadow: 1px 1px 15px white;
+}
+
 
 
 /* ------------     COLOURS     --------------- */

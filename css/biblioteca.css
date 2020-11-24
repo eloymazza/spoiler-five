@@ -164,7 +164,12 @@ h1, h2, h3, h4, h5, h6, p {
 .w-month{
     width: 120%;
 }
-/* --   FOOTER  -- */
+.efecto-hover:hover{
+    transition: 1s;
+    transform: perspective(2000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(80px);
+    box-shadow: 1px 1px 15px white;
+}
+/* ---   FOOTER  --- */
 .footerDesk{
     background-color: black;
     height: 22vh;

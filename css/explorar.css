@@ -144,6 +144,11 @@ h1, h2, h3, h4, h5, h6, p {
     width: 20%;
     height: 50px;
 }
+.efecto-hover:hover{
+    transition: 1s;
+    transform: perspective(2000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(80px);
+    box-shadow: 1px 1px 15px white;
+}
 
 /* --   FOOTER  -- */
 .footerDesk{

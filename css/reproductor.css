@@ -2,6 +2,7 @@
 body {
     font-family: 'Segoe UI';
     overflow-y: hidden;
+    overflow-x: hidden;
     background-color: #002526;
 }
 h1, h2, h3, h4, h5, h6, p {
@@ -20,10 +21,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .ajustar-col{
     width: 18rem;
-} 
-.max-h-w-mob{
-    max-height: 32px;
-    max-width: 32px;
+}
+.right-ajust{
+  right: 1.5rem;
 }
 /* -------------    CONTAINER   --------- */
 .container-mob{
@@ -31,9 +31,6 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: #002526;
     overflow-y: scroll;
     width: auto;
-    /* height: 16px; */
-    /* padding: 20%; */
-    /* margin-right: 5rem; */
     white-space: nowrap;
 }
 .carrousel-mob{
@@ -50,23 +47,7 @@ h1, h2, h3, h4, h5, h6, p {
     max-height: 160px;
     max-width: 160px;
 }
-.max-h-w-expl{
-    max-height: 160px;
-    max-width: 160px;
-}
-.img-fondo-mob{
-    background-color: black;
-    width: 10rem;
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.card-title{
-    color: white;
-    width: 10rem;
-    text-align: center;
-}
+
 /* -------------    FOOTER   --------- */
 .footer-mob{
     height: 10vh;
@@ -85,8 +66,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 
-
 /* -----------------------------    DESKTOP  ----------------------------- */
+/* --- HEADER --- */
 .headerDesk{
     /* border-style: solid; */
     /* border-color: chartreuse; */
@@ -109,6 +90,7 @@ h1, h2, h3, h4, h5, h6, p {
     z-index: 1;
 }
 
+
 .title-nav{
     background-color: #1b2829;
     justify-content: center;
@@ -125,6 +107,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 11px;
     font-weight: 700;
 }
+
 /*  -- FIN HEADER   -- */
 
 /* --   CONTAINER   -- */
@@ -144,11 +127,6 @@ h1, h2, h3, h4, h5, h6, p {
     width: 20%;
     height: 50px;
 }
-.efecto-hover:hover{
-    transition: 1s;
-    transform: perspective(2000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(80px);
-    box-shadow: 1px 1px 15px white;
-}
 
 /* --   FOOTER  -- */
 .footerDesk{
@@ -156,8 +134,6 @@ h1, h2, h3, h4, h5, h6, p {
     height: 22vh;
 }
 .reproductor{
-    /* border-style: solid; */
-    /* border-color: rgb(0, 38, 253); */
     background-color: gray;
     height: 10px;
 }
@@ -165,8 +141,6 @@ h1, h2, h3, h4, h5, h6, p {
     max-width: 50px;
     max-height: 50px;
 }
-
-
 
 /* EXPLORAR DESKTOP */
 .carrouselExpl{
@@ -177,7 +151,6 @@ h1, h2, h3, h4, h5, h6, p {
 .homeDesk {
     height: 75vh;
     overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 .homeDesk::-webkit-scrollbar{
@@ -231,7 +204,6 @@ h1, h2, h3, h4, h5, h6, p {
     border: none;
 }
 /* -----    CARROUSEL   ---- */
-
 /* --- CORAZON DE LIKE --- */
 .btn-like{
     background-color: transparent;
@@ -251,15 +223,63 @@ h1, h2, h3, h4, h5, h6, p {
 .btn-like:focus{
     outline: none;
 }
+/* ---    EFECTO 3D    --- */
+
+.efecto-hover:hover{
+    transition: 1s;
+    transform: perspective(2000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(80px);
+    box-shadow: 1px 1px 15px white;
+}
+.img-album{
+    max-width: 10rem;
+    max-height: 10rem;
+}
+.width-table{
+    width: 95%;
+}
+.header-table{
+    background-color: black;
+    height: 3rem;
+    border: 1px solid white;
+}
+.canciones-table{
+    background-color: #1b2829;
+    height: 3rem;
+    border: 1px solid white;
+}
+.margin-adjust{
+    margin-left: 76%;
+}
+.time{
+    max-width: 4rem;
+    max-height: 4rem;
+}
+.add-list{
+    max-width: 2rem;
+    max-height: 2rem;
+}
+
+/* --- BOTON DE AGREGAR A PLAYLIST --- */
+.dropdown-menu{
+    background-color: #063738;
+    color: white;
+    width: 12rem;
+    height: 12rem;
+    border: 4px solid  #04cfd2;
+}
+.border-b{
+    height: 2rem;
+    border-bottom: 1px solid  #04cfd2;
+}
+
+.left-playlist{
+    position: absolute;
+    right: 1rem;
+}
+/* --- FIN BOTON DE AGREGAR A PLAYLIST --- */
+
 
 /* ------------     COLOURS     --------------- */
-.img-fondo{
-    background-color: black;
-    width: 13rem;
-    height: 10rem;
-    display: flex;
-    justify-content: center;
-}
 .load{
     background-color: white;
     height: 10px;
@@ -284,4 +304,8 @@ h1, h2, h3, h4, h5, h6, p {
 
 .c-section{
     color: #1b2829;
+}
+body{
+    overflow-y: hidden;
+    background-color: #002526;
 }

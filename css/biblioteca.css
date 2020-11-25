@@ -169,6 +169,7 @@ h1, h2, h3, h4, h5, h6, p {
     transform: perspective(2000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(80px);
     box-shadow: 1px 1px 15px white;
 }
+
 /* ---   FOOTER  --- */
 .footerDesk{
     background-color: black;
@@ -177,6 +178,10 @@ h1, h2, h3, h4, h5, h6, p {
 .reproductor{
     background-color: gray;
     height: 10px;
+}
+.img-play{
+    max-width: 50px;
+    max-height: 50px;
 }
 
 
@@ -244,6 +249,25 @@ h1, h2, h3, h4, h5, h6, p {
 }
 /* -----    CARROUSEL   ---- */
 
+/* --- CORAZON DE LIKE --- */
+.btn-like{
+    background-color: transparent;
+    display: inline-block;
+    height: 2%;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 13%;
+    border: none;
+}
+.btn-like img{
+    display: block;
+    height: 24px;  
+    width: 24px;
+}
+.btn-like:focus{
+    outline: none;
+}
 
 /* ------------     COLOURS     --------------- */
 .img-fondo{

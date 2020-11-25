@@ -134,12 +134,13 @@ h1, h2, h3, h4, h5, h6, p {
     height: 22vh;
 }
 .reproductor{
-    /* border-style: solid; */
-    /* border-color: rgb(0, 38, 253); */
     background-color: gray;
     height: 10px;
 }
-
+.img-play{
+    max-width: 50px;
+    max-height: 50px;
+}
 
 /* EXPLORAR DESKTOP */
 .carrouselExpl{
@@ -198,26 +199,47 @@ h1, h2, h3, h4, h5, h6, p {
 .mostrar{   
     display: block;
     }
+
 .btn-add-image{
     background: transparent;
     border: none;
 }
+/* --- CORAZON DE LIKE --- */
+.btn-like{
+    background-color: transparent;
+    display: inline-block;
+    height: 2%;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 13%;
+    border: none;
+}
+.btn-like img{
+    display: block;
+    height: 24px;  
+    width: 24px;
+}
+.btn-like:focus{
+    outline: none;
+}
 /* -----    CARROUSEL   ---- */
 
 /* ---    EFECTO 3D    --- */
-
 .efecto-hover:hover{
     transition: 1s;
     transform: perspective(2000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(80px);
     box-shadow: 1px 1px 15px white;
 }
+/* ---   FIN EFECTO 3D    --- */
 
 
 
 /* ------------     COLOURS     --------------- */
 .load{
     background-color: white;
-    height: 10px;
+    height: 100%;
+    width: 100%;
 }
 .c-gray{
     color: gray;

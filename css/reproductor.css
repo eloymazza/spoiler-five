@@ -5,6 +5,7 @@ body {
     overflow-x: hidden;
     background-color: #002526;
 }
+
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
@@ -14,6 +15,7 @@ h1, h2, h3, h4, h5, h6, p {
     height: 9vh;
     background-color: black;
 }
+
 .landing-title {
     font-size: 28px;
     font-weight: bold;
@@ -102,7 +104,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 
-.span-user{
+.user-name{
     color: gray;
     font-size: 11px;
     font-weight: 700;
@@ -239,20 +241,20 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .header-table{
     background-color: black;
-    height: 3rem;
+    height: 2rem;
     border: 1px solid white;
 }
 .canciones-table{
     background-color: #1b2829;
-    height: 3rem;
     border: 1px solid white;
+    height: 2.3em;
 }
 .margin-adjust{
     margin-left: 76%;
 }
 .time{
-    max-width: 4rem;
-    max-height: 4rem;
+    height: 1.5em;
+    width: 1.5em;
 }
 .add-list{
     max-width: 2rem;
@@ -308,4 +310,77 @@ h1, h2, h3, h4, h5, h6, p {
 body{
     overflow-y: hidden;
     background-color: #002526;
+}
+
+.album-name {
+    font-size: 25px;
+}
+
+.song-title {
+    font-size: 36px;
+}
+
+
+.song-list-title {
+    font-size: 20px;
+    color: white;
+}
+
+.song-list-header {
+    font-size: 20px;
+}
+
+.list-song-title {
+    font-size: 18px;
+}
+
+
+.play-image {
+    height: 1.5em;
+}
+
+
+/* Comments */
+
+.comments-container {
+    border: 1px solid gray;
+    height: 26vh;
+    width: 98%;
+    overflow-y: scroll;
+}
+
+.avatar-container {
+    height: 4em;
+    display: flex;
+    flex-direction: column;
+    padding-top: 1em;
+}
+
+.avatar-image {
+    margin-left: 5px;
+}
+
+.comment-container {
+    border-bottom: 1px solid gray;
+}
+
+.comment-text {
+    color: gray;
+}
+
+.vote-text  {
+    color: white;
+    font-weight: bold;
+    size: 13px;
+    text-align: center;
+}
+
+.star { 
+    cursor: pointer;
+    width: 1em;
+    height: 1em;
+}
+
+.star-container {
+    text-align: center;
 }

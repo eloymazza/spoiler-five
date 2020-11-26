@@ -40,3 +40,4 @@ vote.addEventListener('click', () => {
 })
 
 
+let a = 1

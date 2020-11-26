@@ -107,7 +107,33 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 11px;
     font-weight: 700;
 }
-
+/* --- POP-UP NOTI --- */
+.add-list-h{
+    max-width: 2rem;
+    max-height: 2rem;
+}
+#dd-h{
+    margin-right: 4rem;
+    background-color: #1b2829;
+    color: white;
+    width: 21rem;
+    height: 16rem;
+    border: 4px solid  #04cfd2;
+}
+.border-b-h{
+    height: 3rem;
+    border-bottom: 1px solid  #04cfd2;
+}
+.left-playlist-h{
+    position: absolute;
+    right: 1rem;
+}
+.dropdown-toggle::after{
+    color: transparent;
+}
+.dropdown-toggle{
+    width: 77%;
+}
 /*  -- FIN HEADER   -- */
 
 /* --   CONTAINER   -- */

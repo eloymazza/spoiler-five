@@ -2,8 +2,10 @@ const stars = document.querySelectorAll('.star')
 const commentsContainer = document.querySelector('.comments-container')
 const voteHelpText = document.querySelector('.vote-text')
 const vote = document.querySelector('#vote')
+const commentContent = document.getElementById('comment-content')
 
 let voted = false
+let voteStars = 0
 
 const handleVote = (i) => {
     stars[i].classList.add('vote-animation')
@@ -30,6 +32,7 @@ stars.forEach((star, i) => {
     star.addEventListener('click', () => {
         if(voted) return
         handleVote(i)
+        voteStars = i+1
     })
 
 })
@@ -37,7 +40,9 @@ stars.forEach((star, i) => {
 vote.addEventListener('click', () => {
     voteHelpText.innerText = 'Gracias por tu calificacion!'
     commentsContainer.classList.add("hide")
+    let content = commentContent.value
+    document.cookie = `content=${content}`
+    document.cookie = `stars=${voteStars}`
+    console.log(document.cookie)
 })
 
-
-let a = 1

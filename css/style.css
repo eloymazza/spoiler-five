@@ -293,3 +293,23 @@ body{
     background-color: #002526;
 }
 
+
+/* search results */ 
+
+.search-results {
+    position: absolute;
+    top: 76%;
+    left: 2.5%;
+    width: 95%;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.search-result {
+    padding: .2em;
+    padding-left: .5em;
+    border: 2px solid black ;
+    color: black;
+    cursor: pointer;
+}

@@ -365,6 +365,10 @@ body{
     height: 1.5em;
 }
 
+.pause-image {
+    width: 2.2em;
+}
+
 
 /* Comments */
 
@@ -409,4 +413,8 @@ body{
 
 .star-container-mini {
     text-align: center;
+}
+
+.bg-lBlue  {
+    background-color: #04CFD2;
 }

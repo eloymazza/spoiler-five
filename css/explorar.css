@@ -54,6 +54,7 @@ h1, h2, h3, h4, h5, h6, p {
     max-height: 160px;
     max-width: 160px;
 }
+
 .img-fondo-mob{
     background-color: black;
     width: 10rem;
@@ -62,11 +63,13 @@ h1, h2, h3, h4, h5, h6, p {
     justify-content: center;
     align-items: center;
 }
+
 .card-title{
     color: white;
     width: 10rem;
     text-align: center;
 }
+
 /* -------------    FOOTER   --------- */
 .footer-mob{
     height: 10vh;
@@ -287,7 +290,9 @@ h1, h2, h3, h4, h5, h6, p {
     height: 10rem;
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
+
 .load{
     background-color: white;
     height: 10px;
@@ -313,3 +318,63 @@ h1, h2, h3, h4, h5, h6, p {
 .c-section{
     color: #1b2829;
 }
+
+
+/* Filter */
+
+#btnFiltrar {
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 5.3em;
+    top: .75em;
+    z-index: 2;
+}
+
+.filter-container {
+    position: absolute;
+    background-color: #002526;
+    right: 5.3em;
+    top: 4em;
+    border: 2px #04cfd2 solid;
+    width: 20%;
+    padding-bottom: 1em;
+    z-index: 2;
+}
+
+.filters-title {
+    color: white;
+    font-weight: bold;
+    margin-top: .5em;
+    font-size: 1em;
+}
+
+.default-filters-title {
+    color: gray;
+    font-weight: bold;
+    margin-top: .4em;
+    margin-bottom: .2em;
+    font-size: .95em;
+}
+
+.filter-button {
+    font-size: .8em;
+    color: white;
+    font-weight: bold;
+    background-color: #002526;
+    border: 1px solid gray;
+    margin-bottom: .25em;
+}
+
+.filter-button:active {
+    outline: none;
+}
+.filter-button:focus {
+    outline: none;
+}
+
+.filter-button:hover , .active-filter-button{
+    background-color: #04cfd2;
+}
+
+

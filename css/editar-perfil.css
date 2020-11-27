@@ -27,7 +27,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 /* -------------    CONTAINER   --------- */
 .container-mob{
-    height: 81vh;
+    height: 73vh;
     background-color: #002526;
 }
 .img-perfil{
@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* -------------    FOOTER   --------- */
 .footer-mob{
-    height: 10vh;
+    height: 18vh;
     background-color: black;
 }
 .img-fot-head-mob{
@@ -72,6 +72,30 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 
+/* --- REPRO MINI --- */
+.repro-h{
+    background-color: rgb(14, 14, 14);
+    height: 8vh;
+    border: 1px solid rgb(212, 208, 208) ;
+}
+.img-repro-mob{
+    height: 7.9vh;
+    width: 4rem;
+    border: 1px solid white;
+}
+.ajustar-repr{
+    position: absolute;
+    right: 30px;
+    align-self: center;
+}
+.ico-next{
+    max-width: 20px;
+    max-height: 20px;
+}
+.ico-play{
+    max-width: 40px;
+    max-height: 40px;
+}
 
 
 /* -----------------------------    DESKTOP  ----------------------------- */

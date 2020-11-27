@@ -230,6 +230,7 @@ max-height: 100%;
     width: 14%;
 }
 
+
 /* -----    CARROUSEL   ---- */
 .previous{
     display: flex;
@@ -335,6 +336,20 @@ max-height: 100%;
 }
 /* --- FIN BOTON DE AGREGAR A PLAYLIST --- */
 
+
+/* --- EFECTO DE TRANSITION */
+
+.mostrarIzq{
+    animation: mostrarIzq 1s;
+}
+@keyframes mostrarIzq{
+    0% {
+        transform: translateX(-250px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 
 /* ------------     COLOURS     --------------- */
 .load{

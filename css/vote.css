@@ -4,8 +4,6 @@
     height: 32px;
 }
 
-
-
 .vote-animation {
     animation: voteStar linear 1s;
 }

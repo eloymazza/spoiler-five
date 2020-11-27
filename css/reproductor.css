@@ -368,7 +368,7 @@ body{
 
 /* Comments */
 
-.comments-container {
+.comments-container-mini {
     border: 1px solid gray;
     height: 26vh;
     width: 98%;
@@ -386,7 +386,7 @@ body{
     margin-left: 5px;
 }
 
-.comment-container {
+.comment-container-mini {
     border-bottom: 1px solid gray;
 }
 
@@ -394,19 +394,19 @@ body{
     color: gray;
 }
 
-.vote-text  {
+.vote-text-mini  {
     color: white;
     font-weight: bold;
     size: 13px;
     text-align: center;
 }
 
-.star { 
+.star-mini { 
     cursor: pointer;
     width: 1em;
     height: 1em;
 }
 
-.star-container {
+.star-container-mini {
     text-align: center;
 }

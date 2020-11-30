@@ -319,8 +319,13 @@ max-height: 100%;
 
 .efecto-hover:hover{
     transition: 1s;
-    transform: perspective(2000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(80px);
-    box-shadow: 1px 1px 15px white;
+    transform: perspective(2000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(35px);
+    box-shadow: 1px 1px 12px white;
+}
+.efecto-hover-cont:hover{
+    transition: 1s;
+    transform: perspective(2000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(8px);
+    box-shadow: 1px 1px 8px gray;
 }
 .img-album{
     max-width: 10rem;
@@ -451,10 +456,21 @@ body{
 /* Comments */
 
 .comments-container-mini {
-    border: 1px solid gray;
+    border: 3px solid gray;
     height: 26vh;
     width: 98%;
     overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container-fluid::-webkit-scrollbar{
+    width: 10px;
+    background: black;
+}
+
+.container-fluid::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 10px;
 }
 
 .avatar-container {

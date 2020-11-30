@@ -121,6 +121,8 @@ max-height: 100%;
     position: absolute;
     left: 4%;
     z-index: 1;
+    max-height: 25px;
+    max-width: 25px;
 }
 
 
@@ -131,7 +133,7 @@ max-height: 100%;
 
 .max-h-w{
     max-height: 25px;
-    max-width: 28px;
+    max-width: 25px;
 }
 
 
@@ -167,6 +169,11 @@ max-height: 100%;
 .dropdown-toggle{
     width: 77%;
 }
+.span-user{
+    color: gray;
+    font-size: 11px;
+    font-weight: 700;
+}
 /*  -- FIN HEADER   -- */
 
 /* --   CONTAINER   -- */
@@ -200,7 +207,10 @@ max-height: 100%;
     max-width: 50px;
     max-height: 50px;
 }
-
+.sound{
+    position: absolute;
+    right: 1px;
+}
 /* EXPLORAR DESKTOP */
 .carrouselExpl{
     border-style: solid;
@@ -232,7 +242,29 @@ max-height: 100%;
     width: 14%;
 }
 
-
+.sound{
+    position: absolute;
+    right: 1px;
+}
+/* --- CORAZON DE LIKE --- */
+.btn-like{
+    background-color: transparent;
+    display: inline-block;
+    height: 2%;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 13%;
+    border: none;
+}
+.btn-like img{
+    display: block;
+    height: 24px;  
+    width: 24px;
+}
+.btn-like:focus{
+    outline: none;
+}
 /* -----    CARROUSEL   ---- */
 .previous{
     display: flex;
@@ -287,8 +319,13 @@ max-height: 100%;
 
 .efecto-hover:hover{
     transition: 1s;
-    transform: perspective(2000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(80px);
-    box-shadow: 1px 1px 15px white;
+    transform: perspective(2000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(35px);
+    box-shadow: 1px 1px 12px white;
+}
+.efecto-hover-cont:hover{
+    transition: 1s;
+    transform: perspective(2000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translateX(0px) translateY(0px) translateZ(8px);
+    box-shadow: 1px 1px 8px gray;
 }
 .img-album{
     max-width: 10rem;
@@ -419,10 +456,21 @@ body{
 /* Comments */
 
 .comments-container-mini {
-    border: 1px solid gray;
+    border: 3px solid gray;
     height: 26vh;
     width: 98%;
     overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.container-fluid::-webkit-scrollbar{
+    width: 10px;
+    background: black;
+}
+
+.container-fluid::-webkit-scrollbar-thumb{
+    background: white;
+    border-radius: 10px;
 }
 
 .avatar-container {

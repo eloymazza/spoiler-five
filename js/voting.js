@@ -37,12 +37,24 @@ stars.forEach((star, i) => {
 
 })
 
+
 vote.addEventListener('click', () => {
-    voteHelpText.innerText = 'Gracias por tu calificacion!'
-    commentsContainer.classList.add("hide")
-    let content = commentContent.value
-    document.cookie = `content=${content}`
-    document.cookie = `stars=${voteStars}`
-    console.log(document.cookie)
+    vote.classList.add("load");
+    let time = setTimeout(function(){
+        voteHelpText.innerText = 'Gracias por tu calificacion!'
+        commentsContainer.classList.add("hide")
+        let content = commentContent.value
+        document.cookie = `content=${content}`
+        document.cookie = `stars=${voteStars}`
+        console.log(document.cookie)
+    }, 2500);
 })
+// vote.addEventListener('click', () => {
+//     voteHelpText.innerText = 'Gracias por tu calificacion!'
+//     commentsContainer.classList.add("hide")
+//     let content = commentContent.value
+//     document.cookie = `content=${content}`
+//     document.cookie = `stars=${voteStars}`
+//     console.log(document.cookie)
+// })
 

@@ -142,7 +142,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .max-h-w{
     max-height: 25px;
-    max-width: 28px;
+    max-width: 25px;
 }
 
 
@@ -220,7 +220,10 @@ h1, h2, h3, h4, h5, h6, p {
     max-height: 50px;
 }
 
-
+.sound{
+    position: absolute;
+    right: 1px;
+}
 
 /* EXPLORAR DESKTOP */
 .carrouselExpl{

@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/biblioteca.css">
-    <link rel="stylesheet" href="../css/vote.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/vote.css">
     <title>Spoiler five</title>
 </head>
 <body>
@@ -689,8 +689,8 @@
                                         <img id="imgCorazon" src="../img/corazon_blanco.png" alt="like">
                                     </button>
                                 </div>
-                                <div class="row">
-                                    <p class="ml-1 mt-5 mb-0 c-white">Paulo londra</p>
+                                <div class="row mt-3">
+                                    <p class="ml-1 mt-4 mb-0 c-white">Paulo londra</p>
                                 </div>
                             </div>
                         </div>
@@ -701,13 +701,15 @@
                                 <img class="img-next-back" src="../img/back.png" alt="anterior"  width="2%" height="40%">
                                 <img class="mr-4 ml-4 img-play" src="../img/play.png" width="8%" height="100%">
                                 <img class="img-next-back" src="../img/proximo.png" alt="next"  width="2%" height="40%">
-        
+                                <div class="sound">
+                                <img src="../img/sonido-musical.png" alt="sonido" height="22px">
+                                </div>
                             </div>
                         </div>
-                            <div class="col-12 d-flex justify-content-end">
+                            <!-- <div class="col-12 d-flex justify-content-end">
                                 <img src="../img/sonido-musical.png" alt="sonido" height="22px">
-                            </div>
-                        <div class="row">
+                            </div> -->
+                        <div class="row mt-3">
                             <div class="reproductor col-12 pl-0 mt-1">
                                 <div class="w-100 h-100 bg-white col-8">
                                 </div>
@@ -716,11 +718,11 @@
                     </div>
                     <div class="col-md-3">
                         <div class="row h-100">
-                            <div class="col-sm-12 mt-4 mb-3 vote-container">
+                            <div class="col-sm-12 mt-4 mb-5 vote-container">
                                 <div class="vote-text">
-                                    Califica este audio
+                                    <h5>CALIFICA ESTE AUDIO</h5>
                                 </div>
-                                <div class="star-container">
+                                <div class="ml-3 star-container">
                                     <img  src="../img/estrella_va.png" class="star" alt="star">
                                     <img  src="../img/estrella_va.png" class="ml-2 star" alt="star">
                                     <img  src="../img/estrella_va.png" class="ml-2 star" alt="star">
@@ -732,7 +734,6 @@
                     </div>
                 </div>
             </div>
-            <!-- FIN OCULTO SOLO EN XS     desktop -->
             <section >
                 <div class="comments-container hide">
                     <div class="comment-header-container">
@@ -744,7 +745,7 @@
                         </div>
                     </div>
                     <div class="comment-main-container">
-                        <textarea name="" class="comment-area" cols="40" rows="10" placeholder="Ingrese su comentario aquí"></textarea>
+                        <textarea id="comment-content" name="" class="comment-area" cols="40" rows="10" placeholder="Ingrese su comentario aquí"></textarea>
                     </div>
                     <div class="comments-footer-container ">
                         <button type="button" id="vote" class="btn access-button">
@@ -753,6 +754,8 @@
                     </div>
                 </div>
             </section>
+        <!-- FIN OCULTO SOLO EN XS     desktop -->
+        
     <script src="../js/biblioteca.js"></script>
     <script src="../js/voting.js"></script>
     <script src="../js/search.js"></script>

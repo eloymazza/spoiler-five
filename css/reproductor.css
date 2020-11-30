@@ -131,7 +131,7 @@ max-height: 100%;
 
 .max-h-w{
     max-height: 25px;
-    max-width: 28px;
+    max-width: 25px;
 }
 
 
@@ -167,6 +167,11 @@ max-height: 100%;
 .dropdown-toggle{
     width: 77%;
 }
+.span-user{
+    color: gray;
+    font-size: 11px;
+    font-weight: 700;
+}
 /*  -- FIN HEADER   -- */
 
 /* --   CONTAINER   -- */
@@ -200,7 +205,10 @@ max-height: 100%;
     max-width: 50px;
     max-height: 50px;
 }
-
+.sound{
+    position: absolute;
+    right: 1px;
+}
 /* EXPLORAR DESKTOP */
 .carrouselExpl{
     border-style: solid;
@@ -232,7 +240,29 @@ max-height: 100%;
     width: 14%;
 }
 
-
+.sound{
+    position: absolute;
+    right: 1px;
+}
+/* --- CORAZON DE LIKE --- */
+.btn-like{
+    background-color: transparent;
+    display: inline-block;
+    height: 2%;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    width: 13%;
+    border: none;
+}
+.btn-like img{
+    display: block;
+    height: 24px;  
+    width: 24px;
+}
+.btn-like:focus{
+    outline: none;
+}
 /* -----    CARROUSEL   ---- */
 .previous{
     display: flex;

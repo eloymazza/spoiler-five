@@ -107,7 +107,7 @@
     position: relative;
 }
 
-.access-button {
+/* .access-button {
     height: 70%;
     width: 50%;
     background-color: #04CFD2;
@@ -119,5 +119,23 @@
 
 .hide {
     display: none;
+} */
+.access-button {
+    background: linear-gradient(to left, #047779, #08a1a3 50%, #04CFD2 50%);
+    width: 40%;
+    height: 70%;
+    font-size: 80%;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-size: 300px;
+    border-radius: 10px;
+    border: none;
+    transition: background-position 4s ease;
 }
 
+.load{
+    background-position: 140px 0;
+}
+.hide{
+    display: none;
+}

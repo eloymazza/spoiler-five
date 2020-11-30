@@ -163,6 +163,8 @@ input:checked + .slide-mob:before {
     position: absolute;
     left: 4%;
     z-index: 1;
+    max-height: 25px;
+    max-width: 25px;
 }
 .max-h-w{
     max-height: 25px;

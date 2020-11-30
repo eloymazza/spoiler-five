@@ -1,28 +1,28 @@
 // --- DESKTOP ---
-let btnFiltrar = document.querySelector("#btnFiltrar").addEventListener("click", filtrar);
+// let btnFiltrar = document.querySelector("#btnFiltrar").addEventListener("click", filtrar);
 
-function filtrar(){
-    let mostrarFiltro = document.querySelector("#filtro").classList.toggle("filtro-bl")
+// function filtrar(){
+//     let mostrarFiltro = document.querySelector("#filtro").classList.toggle("filtro-bl")
 
-    if(mostrarFiltro){
-        document.querySelector("#imgFiltro").src = "../img/filtrar_cel.png";
-    }else{
-        document.querySelector("#imgFiltro").src = "../img/filtrar_gris.png";
-    }
-}
+//     if(mostrarFiltro){
+//         document.querySelector("#imgFiltro").src = "../img/filtrar_cel.png";
+//     }else{
+//         document.querySelector("#imgFiltro").src = "../img/filtrar_gris.png";
+//     }
+// }
 
-// --- MOBILE ---
-let btnFiltrarMob = document.querySelector("#btnFiltrarMob").addEventListener("click", filtrarMob);
+// // --- MOBILE ---
+// let btnFiltrarMob = document.querySelector("#btnFiltrarMob").addEventListener("click", filtrarMob);
 
-function filtrarMob(){
-    let mostrarFiltroMob = document.querySelector("#filtroMob").classList.toggle("filtro-bl")
+// function filtrarMob(){
+//     let mostrarFiltroMob = document.querySelector("#filtroMob").classList.toggle("filtro-bl")
 
-    if(mostrarFiltroMob){
-        document.querySelector("#imgFiltroMob").src = "../img/filtrar_cel.png";
-    }else{
-        document.querySelector("#imgFiltroMob").src = "../img/filtrar_gris.png";
-    }
-}
+//     if(mostrarFiltroMob){
+//         document.querySelector("#imgFiltroMob").src = "../img/filtrar_cel.png";
+//     }else{
+//         document.querySelector("#imgFiltroMob").src = "../img/filtrar_gris.png";
+//     }
+// }
 
 // --- like desktop ---
 let i = 0;

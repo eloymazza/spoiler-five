@@ -7,6 +7,8 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 		integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" href="../css/result-busqueda.css">
+    <link rel="stylesheet" href="../css/vote.css">
+
 	<title>Spoiler five</title>
 </head>
 <body>
@@ -668,61 +670,89 @@
 			<div class="col-3 pl-0">
 				<div class="row">
 					<div class="col-6">
-						<img src="../img/imgAlbum.jpg" alt="album" width="100%" height="118px">
+					<a href="reproductor.html">
+						<img  src="../img/imgAlbum.jpg" alt="album" width="100%" height="118px">
+					</a>
 					</div>
 					<div class="col-6">
 						<div class="row">
-							<h6 class="c-white ml-1 mt-1">Tal vez</h6>
-							<img class="ml-3 mt-2" src="../img/corazon_blanco.png" alt="like" width="12%" height="10%">
+							<a href="reproductor.html">
+								<h6 class="c-white ml-1 mt-1">Tal vez</h6>
+							</a>
+							<button class="btn-like ml-3 mt-1" id="btnLike">
+								<img id="imgCorazon" src="../img/corazon_blanco.png" alt="like">
+							</button>
 						</div>
-						<div class="row">
-							<p class="ml-1 mt-5 mb-0 c-white">Paulo londra</p>
+						<div class="row mt-3">
+							<p class="ml-1 mt-4 mb-0 c-white">Paulo londra</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-6">
 				<div class="row">
-					<div class="col-12 text-center mt-3">
-						<img src="../img/back.png" alt="anterior" width="3%" height="55%">
-						<img class="mr-3 ml-3" src="../img/play.png" alt="play" width="6%" height="100%">
-						<img src="../img/proximo.png" alt="next" width="3%" height="55%">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-12 d-flex justify-content-end">
+					<div class="col-12 text-center d-flex align-items-center justify-content-center mt-2">
+						<img class="img-next-back" src="../img/back.png" alt="anterior"  width="2%" height="40%">
+						<img class="mr-4 ml-4 img-play" src="../img/play.png" width="8%" height="100%">
+						<img class="img-next-back" src="../img/proximo.png" alt="next"  width="2%" height="40%">
+
+						<div class="sound">
 						<img src="../img/sonido-musical.png" alt="sonido" height="22px">
+						</div>
 					</div>
 				</div>
-				<div class="row">
+					<!-- <div class="col-12 d-flex justify-content-end">
+						<img src="../img/sonido-musical.png" alt="sonido" height="22px">
+					</div> -->
+				<div class="row mt-3">
 					<div class="reproductor col-12 pl-0 mt-1">
-						<div class="load col-8">
+						<div class="w-100 h-100 bg-white col-8">
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-3">
-				<div class="row d-flex justify-content-end">
-					<img class="mr-3 mt-4" src="../img/comentario.png" alt="comentario" width="8%" height="90%">
-				</div>
-				<div class="row">
-					<div class="col-12 mt-4 d-flex justify-content-end">
-						<img src="../img/estrella.png" alt="star" width="8%" height="80%">
-						<img class="ml-2" src="../img/estrella.png" alt="star" width="8%" height="80%">
-						<img class="ml-2" src="../img/estrella.png" alt="star" width="8%" height="80%">
-						<img class="ml-2" src="../img/estrella_va.png" alt="star" width="8%" height="80%">
-						<img class="mr-2 ml-2" src="../img/estrella_va.png" alt="star" width="8%" height="80%">
+				<div class="row h-100">
+					<div class="col-sm-12 mt-4 mb-5 vote-container">
+						<div class="vote-text">
+							<h5>CALIFICA ESTE AUDIO</h5>
+						</div>
+						<div class="ml-3 star-container">
+							<img  src="../img/estrella_va.png" class="star" alt="star">
+							<img  src="../img/estrella_va.png" class="ml-2 star" alt="star">
+							<img  src="../img/estrella_va.png" class="ml-2 star" alt="star">
+							<img  src="../img/estrella_va.png" class="ml-2 star"  alt="star">
+							<img  src="../img/estrella_va.png" class="mr-2 ml-2 star" alt="star">
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- FIN OCULTO SOLO EN XS     DESKTOP -->
+	<section >
+		<div class="comments-container hide">
+			<div class="comment-header-container">
+				<div class="comment-image-container">
+					<img src="../img/comentario.png" width="60%" height="90%" alt="">
+				</div>
+				<div class="comment-title-container">
+					<span class="comment-title">Deja tu comentario sobre el audio</span>
+				</div>
+			</div>
+			<div class="comment-main-container">
+				<textarea id="comment-content" name="" class="comment-area" cols="40" rows="10" placeholder="Ingrese su comentario aquí"></textarea>
+			</div>
+			<div class="comments-footer-container ">
+				<button type="button" id="vote" class="btn access-button">
+					VOTAR
+				</button>
+			</div>
+		</div>
+	</section>
+<!-- FIN OCULTO SOLO EN XS     desktop -->
 
 
-
-
-	<!-- <script src="../js/buscar.js"></script> -->
+	<script src="../js/voting.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
 		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
 	</script>

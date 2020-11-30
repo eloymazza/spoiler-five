@@ -142,7 +142,7 @@ input:checked + .slide-mob:before {
 }
 .max-h-w{
     max-height: 25px;
-    max-width: 28px;
+    max-width: 25px;
 }
 .span-user{
     color: gray;

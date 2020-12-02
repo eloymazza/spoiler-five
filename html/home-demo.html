@@ -7,6 +7,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/vote.css">
+    <link rel="stylesheet" href="../css/flip-card.css">
     <title>Spoiler five</title>
 </head>
 <body>
@@ -357,17 +358,17 @@
 
                 <div class="row">
                                                     <!-- LO ULTIMO --> 
-                <div id="carouselExampleInterval" class="carousel slide ml-3 mt-3" data-ride="carousel">
+                <div id="" class="carousel slide ml-3 mt-3" >
                     <div class="row mr-6">
                         <div class="col-9">
                             <h5 class="ml-3 c-white">LO ULTIMO</h5>
                         </div>
                         <div class="col-3 d-flex justify-content-end">
-                            <a href="#carouselExampleInterval" role="button" data-slide="prev">
+                            <a href="#" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Previous</span>
                             </a>
-                            <a class="ml-3" href="#carouselExampleInterval" role="button" data-slide="next">
+                            <a class="ml-3" href="#" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Next</span>
                             </a>
@@ -375,20 +376,31 @@
                     </div>
                     <!--  CARRUSEL 1--> 
                     <div class="carousel-inner">     
-                    <div class="carousel-item active" data-interval="20000">
+                    <div class=" " >
                         <div class="row card-deck mt-1">
-                            <div class="card col-3">
-                                <img src="../img/fiesta.jpg" class="efecto-hover ml-3 mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white ml-3">Fiesta! Fiesta!</h5>
-                                    <p class="c-gray ml-3">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            <div class="card col-3 card-height">
+                                <div class="flip-card mt-2">
+                                    <div class="flip-card-inner ">
+                                        <a href="reproductor.html">
+                                            <div class="flip-card-front " >
+                                                <img src="../img/fiesta.jpg" class="card-front-image">
+                                            </div>
+                                            <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                                <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                    </div>
+                                    <div class="card-description-container">
+                                        <h5 class="card-title mt-3   mb-1 c-white">Fiesta! Fiesta!</h5>
+                                        <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                                    </div>     
                             </div>
-
                             <div class="card col-3">
                                 <img src="../img/ìconos-del-Rock-Argentino.jpg" class="efecto-hover mt-2" width="80%" height="45%">
                                     <h5 class="card-title mt-1 c-white">Rock Argentino</h5>
                                     <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
                             </div>
-
                             <div class="card col-3">
                                 <a href="reproductor.html">
                                 <img src="../img/this_paulo.jpg" class="efecto-hover mt-2" width="80%" height="45%">
@@ -396,7 +408,6 @@
                                     <h5 class="card-title mt-1 c-white">Paulo Londra</h5>
                                     <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
                             </div>
-
                             <div class="card col-3">
                                 <img src="../img/hits_urbanos.jpg" class="efecto-hover mt-2" width="80%" height="45%">
                                     <h5 class="card-title mt-1 c-white">Hits Urbanos</h5>

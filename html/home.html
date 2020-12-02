@@ -7,6 +7,7 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/vote.css">
+    <link rel="stylesheet" href="../css/flip-card.css">
     <title>Spoiler five</title>
 </head>
 <body>
@@ -325,7 +326,9 @@
         <div class="row">
             <div class="col-2">
                 <div class="fixed">
-                <div class="row title-nav"><h4 class="c-lBlue">SPOILER FIVE</h4></div>
+                <div class="row title-nav ">
+                    <h4 class="c-lBlue mt-3">SPOILER FIVE</h4>
+                </div>
                 <div class="row navs"> 
                     <div class="col-12 text-center mt-4">
                         <a href="home.html"><img src="../img/casa.png" width="20%" height="30%"></a>
@@ -349,14 +352,12 @@
 
                 </div>
             </div>
-
             <!-- CARROUSELES -->
             <div class="col-10">
                 <!-- CARROUSEL 1 (Lo ultimo) -->
                 <h3 class="ml-3 c-white">HOME</h3>
-
                 <div class="row">
-                                                    <!-- LO ULTIMO --> 
+                <!-- LO ULTIMO --> 
                 <div id="carouselExampleInterval" class="carousel slide ml-3 mt-3" data-ride="carousel">
                     <div class="row mr-6">
                         <div class="col-9">
@@ -377,91 +378,259 @@
                     <div class="carousel-inner">     
                     <div class="carousel-item active" data-interval="20000">
                         <div class="row card-deck mt-1">
-                            <div class="card col-3">
-                                <img src="../img/fiesta.jpg" class="efecto-hover ml-3 mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white ml-3">Fiesta! Fiesta!</h5>
-                                    <p class="c-gray ml-3">Unete al party con estos hits para darle hasta que amanezca.</p>
-                            </div>
-
-                            <div class="card col-3">
-                                <img src="../img/ìconos-del-Rock-Argentino.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Rock Argentino</h5>
+                            <!-- card 1 -->
+                            <div class="card col-3 card-height">
+                                <div class="flip-card mt-2">
+                                    <div class="flip-card-inner ">
+                                        <a href="reproductor.html">
+                                            <div class="flip-card-front " >
+                                                <img src="../img/fiesta.jpg" class="card-front-image">
+                                            </div>
+                                            <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                                <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-description-container pl-1">
+                                    <h5 class="card-title mt-3   mb-1 c-white">Fiesta! Fiesta!</h5>
                                     <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                                </div>     
                             </div>
-
-                            <div class="card col-3">
-                                <a href="reproductor.html">
-                                <img src="../img/this_paulo.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                </a>
-                                    <h5 class="card-title mt-1 c-white">Paulo Londra</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                             <!-- end card 1 -->
+                            <!-- card 2 -->
+                            <div class="card col-3 card-height">
+                                <div class="flip-card mt-2">
+                                    <div class="flip-card-inner ">
+                                        <a href="reproductor.html">
+                                            <div class="flip-card-front " >
+                                                <img src="../img/ìconos-del-Rock-Argentino.jpg" class="card-front-image">
+                                            </div>
+                                            <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                                <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-description-container pl-1">
+                                    <h5 class="card-title mt-3 mb-1 c-white">Rock Argentino</h5>
+                                    <p class="c-gray">Del Rock argentino, lo mejor.</p>
+                                </div>     
                             </div>
-
-                            <div class="card col-3">
-                                <img src="../img/hits_urbanos.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Hits Urbanos</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                             <!-- end card 2 -->
+                            <!-- card 3 -->
+                            <div class="card col-3 card-height">
+                                <div class="flip-card mt-2">
+                                    <div class="flip-card-inner ">
+                                        <a href="reproductor.html">
+                                            <div class="flip-card-front " >
+                                                <img src="../img/this_paulo.jpg" class="card-front-image">
+                                            </div>
+                                            <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                                <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-description-container pl-1">
+                                    <h5 class="card-title mt-3 mb-1 c-white">Paulo Londra</h5>
+                                    <p class="c-gray">Del quinto escalon a conquistar el trap latinoamericano</p>
+                                </div>     
                             </div>
-                         </div>  
+                             <!-- end card 3 -->
+                            <!-- card 4 -->
+                            <div class="card col-3 card-height">
+                                <div class="flip-card mt-2">
+                                    <div class="flip-card-inner ">
+                                        <a href="reproductor.html">
+                                            <div class="flip-card-front " >
+                                                <img src="../img/hits_urbanos.jpg" class="card-front-image">
+                                            </div>
+                                            <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                                <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-description-container pl-1">
+                                    <h5 class="card-title mt-3 mb-1 c-white">Hits Urbanos</h5>
+                                    <p class="c-gray">Lo mas escuchado en español.</p>
+                                </div>     
+                            </div>
+                             <!-- end card 4 -->
+                        </div>  
                         <!--  FIN CARRUSEL 1-->
                     </div>
-
                 <!--  CARRUSEL 2-->
                     <div class="carousel-item" data-interval="20000">
                         <div class="row card-deck mt-1">
-                            <div class="card col-3">
-                                <img src="../img/fiesta.jpg" class="efecto-hover ml-3 mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white ml-3">Fiesta! Fiesta!</h5>
-                                    <p class="c-gray ml-3">Unete al party con estos hits para darle hasta que amanezca.</p>
-                            </div>
-                            
-                            <div class="card col-3">
-                                <img src="../img/ìconos-del-Rock-Argentino.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Rock Argentino</h5>
+                            <!-- card 1 -->
+                            <div class="card col-3 card-height">
+                                <div class="flip-card mt-2">
+                                    <div class="flip-card-inner ">
+                                        <a href="reproductor.html">
+                                            <div class="flip-card-front " >
+                                                <img src="../img/fiesta.jpg" class="card-front-image">
+                                            </div>
+                                            <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                                <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-description-container pl-1">
+                                    <h5 class="card-title mt-3   mb-1 c-white">Fiesta! Fiesta!</h5>
                                     <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                                </div>     
                             </div>
-
-                            <div class="card col-3">
-                                <img src="../img/this_paulo.jpg" width="80%" class="efecto-hover mt-2" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Paulo Londra</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                             <!-- end card 1 -->
+                            <!-- card 2 -->
+                            <div class="card col-3 card-height">
+                                <div class="flip-card mt-2">
+                                    <div class="flip-card-inner ">
+                                        <a href="reproductor.html">
+                                            <div class="flip-card-front " >
+                                                <img src="../img/ìconos-del-Rock-Argentino.jpg" class="card-front-image">
+                                            </div>
+                                            <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                                <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-description-container pl-1">
+                                    <h5 class="card-title mt-3 mb-1 c-white">Rock Argentino</h5>
+                                    <p class="c-gray">Del Rock argentino, lo mejor.</p>
+                                </div>     
                             </div>
-
-                            <div class="card col-3">
-                                <img src="../img/hits_urbanos.jpg" width="80%" class="efecto-hover mt-2" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Hits Urbanos</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                             <!-- end card 2 -->
+                            <!-- card 3 -->
+                            <div class="card col-3 card-height">
+                                <div class="flip-card mt-2">
+                                    <div class="flip-card-inner ">
+                                        <a href="reproductor.html">
+                                            <div class="flip-card-front " >
+                                                <img src="../img/this_paulo.jpg" class="card-front-image">
+                                            </div>
+                                            <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                                <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-description-container pl-1">
+                                    <h5 class="card-title mt-3 mb-1 c-white">Paulo Londra</h5>
+                                    <p class="c-gray">Del quinto escalon a conquistar el trap latinoamericano</p>
+                                </div>     
                             </div>
+                             <!-- end card 3 -->
+                            <!-- card 4 -->
+                            <div class="card col-3 card-height">
+                                <div class="flip-card mt-2">
+                                    <div class="flip-card-inner ">
+                                        <a href="reproductor.html">
+                                            <div class="flip-card-front " >
+                                                <img src="../img/hits_urbanos.jpg" class="card-front-image">
+                                            </div>
+                                            <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                                <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-description-container pl-1">
+                                    <h5 class="card-title mt-3 mb-1 c-white">Hits Urbanos</h5>
+                                    <p class="c-gray">Lo mas escuchado en español.</p>
+                                </div>     
+                            </div>
+                             <!-- end card 4 -->
                         </div>  
                     </div>
-                        <!--  FIN CARRUSEL 2-->
+                    <!--  FIN CARRUSEL 2-->
                         
-                        <!--  CARRUSEL 3-->
+                    <!--  CARRUSEL 3-->
                     <div class="carousel-item" data-interval="20000"> 
                         <div class="row card-deck mt-1">
-                            <div class="card col-3">
-                                <img src="../img/fiesta.jpg" class="efecto-hover ml-3 mt-2" width="80%" height="45%">
-                                <h5 class="card-title mt-1 c-white ml-3">Fiesta! Fiesta!</h5>
-                                <p class="c-gray ml-3">Unete al party con estos hits para darle hasta que amanezca.</p>
+                           <!-- card 1 -->
+                           <div class="card col-3 card-height">
+                            <div class="flip-card mt-2">
+                                <div class="flip-card-inner ">
+                                    <a href="reproductor.html">
+                                        <div class="flip-card-front " >
+                                            <img src="../img/fiesta.jpg" class="card-front-image">
+                                        </div>
+                                        <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                            <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                            
-                            <div class="card col-3">
-                                <img src="../img/ìconos-del-Rock-Argentino.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Rock Argentino</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            <div class="card-description-container pl-1">
+                                <h5 class="card-title mt-3   mb-1 c-white">Fiesta! Fiesta!</h5>
+                                <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>     
+                        </div>
+                         <!-- end card 1 -->
+                        <!-- card 2 -->
+                        <div class="card col-3 card-height">
+                            <div class="flip-card mt-2">
+                                <div class="flip-card-inner ">
+                                    <a href="reproductor.html">
+                                        <div class="flip-card-front " >
+                                            <img src="../img/ìconos-del-Rock-Argentino.jpg" class="card-front-image">
+                                        </div>
+                                        <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                            <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-
-                            <div class="card col-3">
-                                <img src="../img/this_paulo.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Paulo Londra</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            <div class="card-description-container pl-1">
+                                <h5 class="card-title mt-3 mb-1 c-white">Rock Argentino</h5>
+                                <p class="c-gray">Del Rock argentino, lo mejor.</p>
+                            </div>     
+                        </div>
+                         <!-- end card 2 -->
+                        <!-- card 3 -->
+                        <div class="card col-3 card-height">
+                            <div class="flip-card mt-2">
+                                <div class="flip-card-inner ">
+                                    <a href="reproductor.html">
+                                        <div class="flip-card-front " >
+                                            <img src="../img/this_paulo.jpg" class="card-front-image">
+                                        </div>
+                                        <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                            <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-
-                            <div class="card col-3">
-                                <img src="../img/hits_urbanos.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Hits Urbanos</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
-                            </div>           
+                            <div class="card-description-container pl-1">
+                                <h5 class="card-title mt-3 mb-1 c-white">Paulo Londra</h5>
+                                <p class="c-gray">Del quinto escalon a conquistar el trap latinoamericano</p>
+                            </div>     
+                        </div>
+                         <!-- end card 3 -->
+                        <!-- card 4 -->
+                        <div class="card col-3 card-height">
+                            <div class="flip-card mt-2">
+                                <div class="flip-card-inner ">
+                                    <a href="reproductor.html">
+                                        <div class="flip-card-front " >
+                                            <img src="../img/hits_urbanos.jpg" class="card-front-image">
+                                        </div>
+                                        <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                            <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-description-container pl-1">
+                                <h5 class="card-title mt-3 mb-1 c-white">Hits Urbanos</h5>
+                                <p class="c-gray">Lo mas escuchado en español.</p>
+                            </div>     
+                        </div>
+                         <!-- end card 4 -->
                         </div>
                     </div>
                         <!-- FIN CARRUSEL 3-->
@@ -469,8 +638,6 @@
                     </div>
                 </div> 
                 <!-- FIN DE CARROUSEL 1 (Lo ultimo) -->
-
-
                 <!-- CARROUSEL 2 (Escuchados recientemente) -->
                 <div class="row mt-4">
                     <div id="carouselExampleIntervalTwo" class="carousel slide ml-3" data-ride="carousel">
@@ -489,63 +656,175 @@
                             </a>
                         </div>
                     </div>
-                
                     <div class="carousel-inner">     <!--  CARRUSEL 1--> 
                     <div class="carousel-item active" data-interval="20000">
                         <div class="row card-deck mt-1">
-                            <div class="card col-3">
-                                <img src="../img/fiesta.jpg" class="efecto-hover ml-3 mt-2" width="80%" height="45%">
-                                <h5 class="card-title mt-1 c-white ml-3">Fiesta! Fiesta!</h5>
-                                <p class="c-gray ml-3">Unete al party con estos hits para darle hasta que amanezca.</p>
-                            </div>
-
-                            <div class="card col-3">
-                                <img src="../img/ìconos-del-Rock-Argentino.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Rock Argentino</h5>
+                            <!-- card 1 -->
+                            <div class="card col-3 card-height">
+                                <div class="flip-card mt-2">
+                                    <div class="flip-card-inner ">
+                                        <a href="reproductor.html">
+                                            <div class="flip-card-front " >
+                                                <img src="../img/fiesta.jpg" class="card-front-image">
+                                            </div>
+                                            <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                                <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-description-container pl-1">
+                                    <h5 class="card-title mt-3   mb-1 c-white">Fiesta! Fiesta!</h5>
                                     <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                                </div>     
                             </div>
-
-                            <div class="card col-3">
-                                <img src="../img/this_paulo.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Paulo Londra</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                             <!-- end card 1 -->
+                            <!-- card 2 -->
+                            <div class="card col-3 card-height">
+                                <div class="flip-card mt-2">
+                                    <div class="flip-card-inner ">
+                                        <a href="reproductor.html">
+                                            <div class="flip-card-front " >
+                                                <img src="../img/ìconos-del-Rock-Argentino.jpg" class="card-front-image">
+                                            </div>
+                                            <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                                <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-description-container pl-1">
+                                    <h5 class="card-title mt-3 mb-1 c-white">Rock Argentino</h5>
+                                    <p class="c-gray">Del Rock argentino, lo mejor.</p>
+                                </div>     
                             </div>
-
-                            <div class="card col-3">
-                                <img src="../img/hits_urbanos.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Hits Urbanos</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                             <!-- end card 2 -->
+                            <!-- card 3 -->
+                            <div class="card col-3 card-height">
+                                <div class="flip-card mt-2">
+                                    <div class="flip-card-inner ">
+                                        <a href="reproductor.html">
+                                            <div class="flip-card-front " >
+                                                <img src="../img/this_paulo.jpg" class="card-front-image">
+                                            </div>
+                                            <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                                <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-description-container pl-1">
+                                    <h5 class="card-title mt-3 mb-1 c-white">Paulo Londra</h5>
+                                    <p class="c-gray">Del quinto escalon a conquistar el trap latinoamericano</p>
+                                </div>     
                             </div>
-                         </div>  
+                             <!-- end card 3 -->
+                            <!-- card 4 -->
+                            <div class="card col-3 card-height">
+                                <div class="flip-card mt-2">
+                                    <div class="flip-card-inner ">
+                                        <a href="reproductor.html">
+                                            <div class="flip-card-front " >
+                                                <img src="../img/hits_urbanos.jpg" class="card-front-image">
+                                            </div>
+                                            <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                                <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-description-container pl-1">
+                                    <h5 class="card-title mt-3 mb-1 c-white">Hits Urbanos</h5>
+                                    <p class="c-gray">Lo mas escuchado en español.</p>
+                                </div>     
+                            </div>
+                             <!-- end card 4 -->
+                        </div>  
                         <!--  FIN CARRUSEL 1-->
                     </div>
-
-                <!--  CARRUSEL 2-->
+                    <!--  CARRUSEL 2-->
                     <div class="carousel-item" data-interval="20000">
                         <div class="row card-deck mt-1">
-                            <div class="card col-3">
-                                <img src="../img/fiesta.jpg" class="efecto-hover ml-3 mt-2" width="80%" height="45%">
-                                <h5 class="card-title mt-1 c-white ml-3">Fiesta! Fiesta!</h5>
-                                <p class="c-gray ml-3">Unete al party con estos hits para darle hasta que amanezca.</p>
-                            </div>
-                            
-                            <div class="card col-3">
-                                <img src="../img/ìconos-del-Rock-Argentino.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Rock Argentino</h5>
+                            <!-- card 1 -->
+                            <div class="card col-3 card-height">
+                                <div class="flip-card mt-2">
+                                    <div class="flip-card-inner ">
+                                        <a href="reproductor.html">
+                                            <div class="flip-card-front " >
+                                                <img src="../img/fiesta.jpg" class="card-front-image">
+                                            </div>
+                                            <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                                <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-description-container pl-1">
+                                    <h5 class="card-title mt-3   mb-1 c-white">Fiesta! Fiesta!</h5>
                                     <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                                </div>     
                             </div>
-
-                            <div class="card col-3">
-                                <img src="../img/this_paulo.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Paulo Londra</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                             <!-- end card 1 -->
+                            <!-- card 2 -->
+                            <div class="card col-3 card-height">
+                                <div class="flip-card mt-2">
+                                    <div class="flip-card-inner ">
+                                        <a href="reproductor.html">
+                                            <div class="flip-card-front " >
+                                                <img src="../img/ìconos-del-Rock-Argentino.jpg" class="card-front-image">
+                                            </div>
+                                            <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                                <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-description-container pl-1">
+                                    <h5 class="card-title mt-3 mb-1 c-white">Rock Argentino</h5>
+                                    <p class="c-gray">Del Rock argentino, lo mejor.</p>
+                                </div>     
                             </div>
-
-                            <div class="card col-3">
-                                <img src="../img/hits_urbanos.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Hits Urbanos</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                             <!-- end card 2 -->
+                            <!-- card 3 -->
+                            <div class="card col-3 card-height">
+                                <div class="flip-card mt-2">
+                                    <div class="flip-card-inner ">
+                                        <a href="reproductor.html">
+                                            <div class="flip-card-front " >
+                                                <img src="../img/this_paulo.jpg" class="card-front-image">
+                                            </div>
+                                            <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                                <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-description-container pl-1">
+                                    <h5 class="card-title mt-3 mb-1 c-white">Paulo Londra</h5>
+                                    <p class="c-gray">Del quinto escalon a conquistar el trap latinoamericano</p>
+                                </div>     
                             </div>
+                             <!-- end card 3 -->
+                            <!-- card 4 -->
+                            <div class="card col-3 card-height">
+                                <div class="flip-card mt-2">
+                                    <div class="flip-card-inner ">
+                                        <a href="reproductor.html">
+                                            <div class="flip-card-front " >
+                                                <img src="../img/hits_urbanos.jpg" class="card-front-image">
+                                            </div>
+                                            <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                                <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="card-description-container pl-1">
+                                    <h5 class="card-title mt-3 mb-1 c-white">Hits Urbanos</h5>
+                                    <p class="c-gray">Lo mas escuchado en español.</p>
+                                </div>     
+                            </div>
+                             <!-- end card 4 -->
                         </div>  
                     </div>
                         <!--  FIN CARRUSEL 2-->
@@ -553,29 +832,86 @@
                         <!--  CARRUSEL 3-->
                     <div class="carousel-item" data-interval="20000"> 
                         <div class="row card-deck mt-1">
-                            <div class="card col-3">
-                                <img src="../img/fiesta.jpg" class="efecto-hover ml-3 mt-2" width="80%" height="45%">
-                                <h5 class="card-title mt-1 c-white ml-3">Fiesta! Fiesta!</h5>
-                                <p class="c-gray ml-3">Unete al party con estos hits para darle hasta que amanezca.</p>
+                           <!-- card 1 -->
+                           <div class="card col-3 card-height">
+                            <div class="flip-card mt-2">
+                                <div class="flip-card-inner ">
+                                    <a href="reproductor.html">
+                                        <div class="flip-card-front " >
+                                            <img src="../img/fiesta.jpg" class="card-front-image">
+                                        </div>
+                                        <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                            <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                            
-                            <div class="card col-3">
-                                <img src="../img/ìconos-del-Rock-Argentino.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Rock Argentino</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            <div class="card-description-container pl-1">
+                                <h5 class="card-title mt-3   mb-1 c-white">Fiesta! Fiesta!</h5>
+                                <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>     
+                        </div>
+                         <!-- end card 1 -->
+                        <!-- card 2 -->
+                        <div class="card col-3 card-height">
+                            <div class="flip-card mt-2">
+                                <div class="flip-card-inner ">
+                                    <a href="reproductor.html">
+                                        <div class="flip-card-front " >
+                                            <img src="../img/ìconos-del-Rock-Argentino.jpg" class="card-front-image">
+                                        </div>
+                                        <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                            <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-
-                            <div class="card col-3">
-                                <img src="../img/this_paulo.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Paulo Londra</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            <div class="card-description-container pl-1">
+                                <h5 class="card-title mt-3 mb-1 c-white">Rock Argentino</h5>
+                                <p class="c-gray">Del Rock argentino, lo mejor.</p>
+                            </div>     
+                        </div>
+                         <!-- end card 2 -->
+                        <!-- card 3 -->
+                        <div class="card col-3 card-height">
+                            <div class="flip-card mt-2">
+                                <div class="flip-card-inner ">
+                                    <a href="reproductor.html">
+                                        <div class="flip-card-front " >
+                                            <img src="../img/this_paulo.jpg" class="card-front-image">
+                                        </div>
+                                        <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                            <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-
-                            <div class="card col-3">
-                                <img src="../img/hits_urbanos.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Hits Urbanos</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
-                            </div>           
+                            <div class="card-description-container pl-1">
+                                <h5 class="card-title mt-3 mb-1 c-white">Paulo Londra</h5>
+                                <p class="c-gray">Del quinto escalon a conquistar el trap latinoamericano</p>
+                            </div>     
+                        </div>
+                         <!-- end card 3 -->
+                        <!-- card 4 -->
+                        <div class="card col-3 card-height">
+                            <div class="flip-card mt-2">
+                                <div class="flip-card-inner ">
+                                    <a href="reproductor.html">
+                                        <div class="flip-card-front " >
+                                            <img src="../img/hits_urbanos.jpg" class="card-front-image">
+                                        </div>
+                                        <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                            <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-description-container pl-1">
+                                <h5 class="card-title mt-3 mb-1 c-white">Hits Urbanos</h5>
+                                <p class="c-gray">Lo mas escuchado en español.</p>
+                            </div>     
+                        </div>
+                         <!-- end card 4 -->
                         </div>
                     </div>
                         <!-- FIN CARRUSEL 3-->
@@ -583,9 +919,7 @@
                     </div>
                 </div>
                 <!-- FIN DE CARROUSEL 2 (Escuchados recientemente) -->
-
-
-                 <!-- CARROUSEL 3 (Lo que mas le gusta) -->
+                <!-- CARROUSEL 3 (Lo que mas le gusta) -->
                 <div class="row mt-4">
                     <div id="carouselExampleIntervalThree" class="carousel slide tCenter ml-3" data-ride="carousel">
                     <div class="row mr-6">
@@ -603,63 +937,175 @@
                             </a>
                         </div>
                     </div>
-                
                     <div class="carousel-inner">     <!--  CARRUSEL 1--> 
                     <div class="carousel-item active" data-interval="20000">
                         <div class="row card-deck mt-1">
-                            <div class="card col-3">
-                                <img src="../img/fiesta.jpg" class="efecto-hover ml-3 mt-2" width="80%" height="45%">
-                                <h5 class="card-title mt-1 c-white ml-3">Fiesta! Fiesta!</h5>
-                                <p class="c-gray ml-3">Unete al party con estos hits para darle hasta que amanezca.</p>
+                           <!-- card 1 -->
+                           <div class="card col-3 card-height">
+                            <div class="flip-card mt-2">
+                                <div class="flip-card-inner ">
+                                    <a href="reproductor.html">
+                                        <div class="flip-card-front " >
+                                            <img src="../img/fiesta.jpg" class="card-front-image">
+                                        </div>
+                                        <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                            <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-
-                            <div class="card col-3">
-                                <img src="../img/ìconos-del-Rock-Argentino.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Rock Argentino</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            <div class="card-description-container pl-1">
+                                <h5 class="card-title mt-3   mb-1 c-white">Fiesta! Fiesta!</h5>
+                                <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>     
+                        </div>
+                         <!-- end card 1 -->
+                        <!-- card 2 -->
+                        <div class="card col-3 card-height">
+                            <div class="flip-card mt-2">
+                                <div class="flip-card-inner ">
+                                    <a href="reproductor.html">
+                                        <div class="flip-card-front " >
+                                            <img src="../img/ìconos-del-Rock-Argentino.jpg" class="card-front-image">
+                                        </div>
+                                        <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                            <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-
-                            <div class="card col-3">
-                                <img src="../img/this_paulo.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Paulo Londra</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            <div class="card-description-container pl-1">
+                                <h5 class="card-title mt-3 mb-1 c-white">Rock Argentino</h5>
+                                <p class="c-gray">Del Rock argentino, lo mejor.</p>
+                            </div>     
+                        </div>
+                         <!-- end card 2 -->
+                        <!-- card 3 -->
+                        <div class="card col-3 card-height">
+                            <div class="flip-card mt-2">
+                                <div class="flip-card-inner ">
+                                    <a href="reproductor.html">
+                                        <div class="flip-card-front " >
+                                            <img src="../img/this_paulo.jpg" class="card-front-image">
+                                        </div>
+                                        <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                            <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-
-                            <div class="card col-3">
-                                <img src="../img/hits_urbanos.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Hits Urbanos</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            <div class="card-description-container pl-1">
+                                <h5 class="card-title mt-3 mb-1 c-white">Paulo Londra</h5>
+                                <p class="c-gray">Del quinto escalon a conquistar el trap latinoamericano</p>
+                            </div>     
+                        </div>
+                         <!-- end card 3 -->
+                        <!-- card 4 -->
+                        <div class="card col-3 card-height">
+                            <div class="flip-card mt-2">
+                                <div class="flip-card-inner ">
+                                    <a href="reproductor.html">
+                                        <div class="flip-card-front " >
+                                            <img src="../img/hits_urbanos.jpg" class="card-front-image">
+                                        </div>
+                                        <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                            <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                            </div>  
+                            <div class="card-description-container pl-1">
+                                <h5 class="card-title mt-3 mb-1 c-white">Hits Urbanos</h5>
+                                <p class="c-gray">Lo mas escuchado en español.</p>
+                            </div>     
+                        </div>
+                         <!-- end card 4 -->
+                        </div>  
                         <!--  FIN CARRUSEL 1-->
                     </div>
-
                 <!--  CARRUSEL 2-->
                     <div class="carousel-item" data-interval="20000">
                         <div class="row card-deck mt-1">
-                            <div class="card col-3">
-                                <img src="../img/fiesta.jpg" class="efecto-hover ml-3 mt-2" width="80%" height="45%">
-                                <h5 class="card-title mt-1 c-white ml-3">Fiesta! Fiesta!</h5>
-                                <p class="c-gray ml-3">Unete al party con estos hits para darle hasta que amanezca.</p>
+                           <!-- card 1 -->
+                           <div class="card col-3 card-height">
+                            <div class="flip-card mt-2">
+                                <div class="flip-card-inner ">
+                                    <a href="reproductor.html">
+                                        <div class="flip-card-front " >
+                                            <img src="../img/fiesta.jpg" class="card-front-image">
+                                        </div>
+                                        <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                            <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                            
-                            <div class="card col-3">
-                                <img src="../img/ìconos-del-Rock-Argentino.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Rock Argentino</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            <div class="card-description-container pl-1">
+                                <h5 class="card-title mt-3   mb-1 c-white">Fiesta! Fiesta!</h5>
+                                <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>     
+                        </div>
+                         <!-- end card 1 -->
+                        <!-- card 2 -->
+                        <div class="card col-3 card-height">
+                            <div class="flip-card mt-2">
+                                <div class="flip-card-inner ">
+                                    <a href="reproductor.html">
+                                        <div class="flip-card-front " >
+                                            <img src="../img/ìconos-del-Rock-Argentino.jpg" class="card-front-image">
+                                        </div>
+                                        <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                            <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-
-                            <div class="card col-3">
-                                <img src="../img/this_paulo.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Paulo Londra</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            <div class="card-description-container pl-1">
+                                <h5 class="card-title mt-3 mb-1 c-white">Rock Argentino</h5>
+                                <p class="c-gray">Del Rock argentino, lo mejor.</p>
+                            </div>     
+                        </div>
+                         <!-- end card 2 -->
+                        <!-- card 3 -->
+                        <div class="card col-3 card-height">
+                            <div class="flip-card mt-2">
+                                <div class="flip-card-inner ">
+                                    <a href="reproductor.html">
+                                        <div class="flip-card-front " >
+                                            <img src="../img/this_paulo.jpg" class="card-front-image">
+                                        </div>
+                                        <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                            <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-
-                            <div class="card col-3">
-                                <img src="../img/hits_urbanos.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Hits Urbanos</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            <div class="card-description-container pl-1">
+                                <h5 class="card-title mt-3 mb-1 c-white">Paulo Londra</h5>
+                                <p class="c-gray">Del quinto escalon a conquistar el trap latinoamericano</p>
+                            </div>     
+                        </div>
+                         <!-- end card 3 -->
+                        <!-- card 4 -->
+                        <div class="card col-3 card-height">
+                            <div class="flip-card mt-2">
+                                <div class="flip-card-inner ">
+                                    <a href="reproductor.html">
+                                        <div class="flip-card-front " >
+                                            <img src="../img/hits_urbanos.jpg" class="card-front-image">
+                                        </div>
+                                        <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                            <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
+                            <div class="card-description-container pl-1">
+                                <h5 class="card-title mt-3 mb-1 c-white">Hits Urbanos</h5>
+                                <p class="c-gray">Lo mas escuchado en español.</p>
+                            </div>     
+                        </div>
+                         <!-- end card 4 -->
                         </div>  
                     </div>
                         <!--  FIN CARRUSEL 2-->
@@ -667,29 +1113,86 @@
                         <!--  CARRUSEL 3-->
                     <div class="carousel-item" data-interval="20000"> 
                         <div class="row card-deck mt-1">
-                            <div class="card col-3">
-                                <img src="../img/fiesta.jpg" class="efecto-hover ml-3 mt-2" width="80%" height="45%">
-                                <h5 class="card-title mt-1 c-white ml-3">Fiesta! Fiesta!</h5>
-                                <p class="c-gray ml-3">Unete al party con estos hits para darle hasta que amanezca.</p>
+                           <!-- card 1 -->
+                           <div class="card col-3 card-height">
+                            <div class="flip-card mt-2">
+                                <div class="flip-card-inner ">
+                                    <a href="reproductor.html">
+                                        <div class="flip-card-front " >
+                                            <img src="../img/fiesta.jpg" class="card-front-image">
+                                        </div>
+                                        <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                            <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-                            
-                            <div class="card col-3">
-                                <img src="../img/ìconos-del-Rock-Argentino.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Rock Argentino</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            <div class="card-description-container pl-1">
+                                <h5 class="card-title mt-3   mb-1 c-white">Fiesta! Fiesta!</h5>
+                                <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            </div>     
+                        </div>
+                         <!-- end card 1 -->
+                        <!-- card 2 -->
+                        <div class="card col-3 card-height">
+                            <div class="flip-card mt-2">
+                                <div class="flip-card-inner ">
+                                    <a href="reproductor.html">
+                                        <div class="flip-card-front " >
+                                            <img src="../img/ìconos-del-Rock-Argentino.jpg" class="card-front-image">
+                                        </div>
+                                        <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                            <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-
-                            <div class="card col-3">
-                                <img src="../img/this_paulo.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Paulo Londra</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
+                            <div class="card-description-container pl-1">
+                                <h5 class="card-title mt-3 mb-1 c-white">Rock Argentino</h5>
+                                <p class="c-gray">Del Rock argentino, lo mejor.</p>
+                            </div>     
+                        </div>
+                         <!-- end card 2 -->
+                        <!-- card 3 -->
+                        <div class="card col-3 card-height">
+                            <div class="flip-card mt-2">
+                                <div class="flip-card-inner ">
+                                    <a href="reproductor.html">
+                                        <div class="flip-card-front " >
+                                            <img src="../img/this_paulo.jpg" class="card-front-image">
+                                        </div>
+                                        <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                            <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
-
-                            <div class="card col-3">
-                                <img src="../img/hits_urbanos.jpg" class="efecto-hover mt-2" width="80%" height="45%">
-                                    <h5 class="card-title mt-1 c-white">Hits Urbanos</h5>
-                                    <p class="c-gray">Unete al party con estos hits para darle hasta que amanezca.</p>
-                            </div>           
+                            <div class="card-description-container pl-1">
+                                <h5 class="card-title mt-3 mb-1 c-white">Paulo Londra</h5>
+                                <p class="c-gray">Del quinto escalon a conquistar el trap latinoamericano</p>
+                            </div>     
+                        </div>
+                         <!-- end card 3 -->
+                        <!-- card 4 -->
+                        <div class="card col-3 card-height">
+                            <div class="flip-card mt-2">
+                                <div class="flip-card-inner ">
+                                    <a href="reproductor.html">
+                                        <div class="flip-card-front " >
+                                            <img src="../img/hits_urbanos.jpg" class="card-front-image">
+                                        </div>
+                                        <div class="flip-card-back d-flex justify-content-center align-items-center" id="cast-1-b">
+                                            <img src="../img/play-arrow-b.png" alt="" class="flip-card-back-image">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="card-description-container pl-1">
+                                <h5 class="card-title mt-3 mb-1 c-white">Hits Urbanos</h5>
+                                <p class="c-gray">Lo mas escuchado en español.</p>
+                            </div>     
+                        </div>
+                         <!-- end card 4 -->
                         </div>
                     </div>
                         <!-- FIN CARRUSEL 3-->
